@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="EclecticIQ Intelligence Center">0a5aed122f33211055a656e62799b694</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>All</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>sn_ti_observable</name>
+        <order>3</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles/>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-05 05:31:47</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>525aa9d22f33211055a656e62799b646</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>All</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope>
+        <sys_update_name>sys_app_module_525aa9d22f33211055a656e62799b646</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-05 05:31:47</sys_updated_on>
+        <timeline_page/>
+        <title>All</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</application>
+        <file_path/>
+        <instance_id>a06f34c9dbddf3c052cec5970596196a</instance_id>
+        <instance_name>dev85531</instance_name>
+        <name>sys_app_module_525aa9d22f33211055a656e62799b646</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="EclecticIQ Intelligence Center">0a5aed122f33211055a656e62799b694</application><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>All</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>sn_ti_observable</name><order>3</order><override_menu_roles>false</override_menu_roles><query/><report/><roles/><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-07-05 05:31:47</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>525aa9d22f33211055a656e62799b646</sys_id><sys_mod_count>0</sys_mod_count><sys_name>All</sys_name><sys_overrides/><sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package><sys_policy/><sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope><sys_update_name>sys_app_module_525aa9d22f33211055a656e62799b646</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-07-05 05:31:47</sys_updated_on><timeline_page/><title>All</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>-402872118</payload_hash>
+        <record_name>All</record_name>
+        <reverted_from/>
+        <source>2bb96d122f33211055a656e62799b6fb</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-05 05:31:47</sys_created_on>
+        <sys_id>1a5aa9d22f33211055a656e62799b647</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1892489094f0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-05 05:31:47</sys_updated_on>
+        <type>Module</type>
+        <update_guid>525aa9d26933211059f7959fc7bc5847</update_guid>
+        <update_guid_history>525aa9d26933211059f7959fc7bc5847:-402872118</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="All">080a42562fb3211055a656e62799b627</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-05 07:50:06</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>8bc1810c9e284bdba4b89b7586e882b1</sys_id>
+        <sys_metadata>525aa9d22f33211055a656e62799b646</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>All</sys_name>
+        <sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope>
+        <sys_scope_delete display_value="">02e8eabc72004d848186e315fd123390</sys_scope_delete>
+        <sys_update_name>sys_app_module_525aa9d22f33211055a656e62799b646</sys_update_name>
+        <sys_update_version display_value="sys_app_module_525aa9d22f33211055a656e62799b646">1a5aa9d22f33211055a656e62799b647</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-05 07:50:06</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
