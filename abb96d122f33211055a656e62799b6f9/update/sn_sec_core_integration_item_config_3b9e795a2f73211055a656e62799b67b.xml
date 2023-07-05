@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_sec_core_integration_item_config">
+    <sn_sec_core_integration_item_config action="INSERT_OR_UPDATE">
+        <elem_type>password</elem_type>
+        <help_text/>
+        <integration display_value="EclecticIQ Intelligence Center">39843d1e2f33211055a656e62799b6d9</integration>
+        <label>API Token</label>
+        <mandatory>true</mandatory>
+        <name>api_token</name>
+        <order>100</order>
+        <password_value/>
+        <sys_class_name>sn_sec_core_integration_item_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-05 07:00:53</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>3b9e795a2f73211055a656e62799b67b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>api_token</sys_name>
+        <sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope>
+        <sys_update_name>sn_sec_core_integration_item_config_3b9e795a2f73211055a656e62799b67b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-05 07:00:53</sys_updated_on>
+        <type/>
+        <value/>
+    </sn_sec_core_integration_item_config>
+</record_update>
