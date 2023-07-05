@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="6b70f1da2f33211055a656e62799b68f" label="EIQ Observable" max_length="40" name="x_1088979_eclectic_eiq_observable" type="collection">
+        <element label="Created at" max_length="40" name="created_at" type="glide_date_time"/>
+        <element label="Last updated at" max_length="40" name="last_updated_at" type="glide_date_time"/>
+        <element label="maliciousness" max_length="30" name="maliciousness" type="string"/>
+        <element label="Observable ID" max_length="40" name="observable_id" type="integer"/>
+        <element label="Platform link" max_length="500" name="platform_link" type="url"/>
+        <element label="type" max_length="100" name="type" type="string"/>
+        <element display="true" label="value" max_length="500" name="value" type="string_full_utf8"/>
+    </element>
+</database>
