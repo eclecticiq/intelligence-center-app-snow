@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn">
+    <sys_rest_message_fn action="DELETE">
+        <authentication_type>inherit_from_parent</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <content/>
+        <function_name>get observables</function_name>
+        <http_method>get</http_method>
+        <lock>false</lock>
+        <oauth2_profile/>
+        <protocol_name/>
+        <qualified_name>Fetch Observables [ get observables ]</qualified_name>
+        <rest_endpoint>{base_url}api/v2/observables/?filter[&gt;last_updated_at]={observable_last_checksum}</rest_endpoint>
+        <rest_message display_value="Fetch Observables">48d0821e2f73211055a656e62799b657</rest_message>
+        <sys_class_name>sys_rest_message_fn</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-05 07:22:25</sys_created_on>
+        <sys_id>22a34e9e2f73211055a656e62799b63a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>get observables</sys_name>
+        <sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope>
+        <sys_update_name>sys_rest_message_fn_22a34e9e2f73211055a656e62799b63a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-05 07:23:34</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message_fn>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</application>
+        <file_path/>
+        <instance_id>a06f34c9dbddf3c052cec5970596196a</instance_id>
+        <instance_name>dev85531</instance_name>
+        <name>sys_rest_message_fn_22a34e9e2f73211055a656e62799b63a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn"><sys_rest_message_fn action="INSERT_OR_UPDATE"><authentication_type>inherit_from_parent</authentication_type><basic_auth_password/><basic_auth_profile/><basic_auth_user/><content/><function_name>get observables</function_name><http_method>get</http_method><lock>false</lock><oauth2_profile/><protocol_name/><qualified_name>Fetch Observables [ get observables ]</qualified_name><rest_endpoint>{base_url}api/v2/observables/?filter[&gt;last_updated_at]={observable_last_checksum}</rest_endpoint><rest_message display_value="Fetch Observables">48d0821e2f73211055a656e62799b657</rest_message><sys_class_name>sys_rest_message_fn</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-07-05 07:22:25</sys_created_on><sys_id>22a34e9e2f73211055a656e62799b63a</sys_id><sys_mod_count>1</sys_mod_count><sys_name>get observables</sys_name><sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package><sys_policy/><sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope><sys_update_name>sys_rest_message_fn_22a34e9e2f73211055a656e62799b63a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-07-05 07:23:34</sys_updated_on><use_basic_auth>false</use_basic_auth><use_mid_server/><use_mutual_auth>false</use_mutual_auth></sys_rest_message_fn></record_update>]]></payload>
+        <payload_hash>313655405</payload_hash>
+        <record_name>get observables</record_name>
+        <reverted_from/>
+        <source>469d211a2f33211055a656e62799b6eb</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-05 07:23:34</sys_created_on>
+        <sys_id>ebe342de2f73211055a656e62799b6a6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18924ef5f5c0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-05 07:23:34</sys_updated_on>
+        <type>HTTP Method</type>
+        <update_guid>a3e342de647321101ae35e63331451a6</update_guid>
+        <update_guid_history>a3e342de647321101ae35e63331451a6:313655405,a2a34e9e08732110d88fbcb4e751803c:1952286906</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-05 07:25:52</sys_created_on>
+        <sys_db_object display_value="" name="sys_rest_message_fn">sys_rest_message_fn</sys_db_object>
+        <sys_id>6c464e23d12948e0b11d5d06feb48d19</sys_id>
+        <sys_metadata>22a34e9e2f73211055a656e62799b63a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>get observables</sys_name>
+        <sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
+        <sys_parent display_value="">48d0821e2f73211055a656e62799b657</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope>
+        <sys_scope_delete display_value="">02e8eabc72004d848186e315fd123390</sys_scope_delete>
+        <sys_update_name>sys_rest_message_fn_22a34e9e2f73211055a656e62799b63a</sys_update_name>
+        <sys_update_version display_value="sys_rest_message_fn_22a34e9e2f73211055a656e62799b63a">ebe342de2f73211055a656e62799b6a6</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-05 07:25:52</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
