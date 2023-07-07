@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1088979_eclectic.EIQConfigurationUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>EIQConfigurationUtils</name>
+        <script><![CDATA[var EIQConfigurationUtils = Class.create();
+EIQConfigurationUtils.prototype = {
+    _INTEGRATION_ITEM_CONFIG: "sn_sec_core_integration_item_config",
+    initialize: function() {},
+
+    getConfigurationByIntItemConfigId: function(intItemConfigId) {
+
+        var configs = new GlideRecord(this._INTEGRATION_ITEM_CONFIG);
+        configs.addQuery("integration", intItemConfigId);
+        configs.query();
+
+        var configObj = {};
+        while (configs.next()) {
+            configObj[configs.getValue("name")] = {
+                sys_id: configs.getUniqueValue(),
+                name: configs.getValue("name"),
+                label: configs.getValue("label"),
+                value: configs.getValue("value")
+            };
+
+            // Note this script is common code across all SIEM integrations but must be duplicated otherwise the 
+            // getDecryptedValue fails due to cross scope.
+            if (configs.getValue("elem_type").toLowerCase() == "password" && !gs.nil(configs.password_value))
+                configObj[configs.getValue("name")].value = configs.password_value.getDecryptedValue();
+
+            if (configs.getValue("elem_type") == "boolean")
+                configObj[configs.getValue("name")].value = configs.getValue("value") == "true";
+        }
+
+        return configObj;
+    },
+    type: 'EIQConfigurationUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-07 09:42:13</sys_created_on>
+        <sys_id>bfe5000b2f33211055a656e62799b639</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>EIQConfigurationUtils</sys_name>
+        <sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope>
+        <sys_update_name>sys_script_include_bfe5000b2f33211055a656e62799b639</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-07 11:22:46</sys_updated_on>
+    </sys_script_include>
+</record_update>
