@@ -13,18 +13,40 @@ EIQAPIcalls.prototype = {
 
     observable_lookup_call: function(observable_value) {
         var eiq_util = new x_1088979_eclectic.EIQConfigurationUtils();
-        var config = eiq_util.getConfigurationByIntItemConfigId("39843d1e2f33211055a656e62799b6d9");
+        var config = eiq_util.getConfigurationByIntItemConfigId();
 
         try {
             var r = new sn_ws.RESTMessageV2('x_1088979_eclectic.Lookup EIQ Observable', 'Lookup EIQ Observable');
             r.setStringParameterNoEscape('observable_value', observable_value);
             r.setStringParameterNoEscape('base_url', config["base_url"]["value"]);
-			r.setQueryParameter('query_key', 'filter[value]');
+			r.setStringParameter('query_key', encodeURIComponent('filter[value]'));
 			r.setRequestHeader("Authorization", "Bearer " + config["api_token"]["value"]);
             var response = r.execute();
             var responseBody = response.getBody();
             var httpStatus = response.getStatusCode();
+			gs.info(r.getEndpoint());
 			gs.info("Completed observable request with status code" + httpStatus);
+			return responseBody;
+        } catch (ex) {
+            var message = ex.message;
+			return message;
+        }
+
+    },
+	
+	get_source_call: function(source_id) {
+        var eiq_util = new x_1088979_eclectic.EIQConfigurationUtils();
+        var config = eiq_util.getConfigurationByIntItemConfigId();
+
+        try {
+            var r = new sn_ws.RESTMessageV2('x_1088979_eclectic.Get EIQ Source', 'Get EIQ Source');
+			r.setStringParameterNoEscape('source_id', source_id);
+			r.setStringParameterNoEscape('base_url', config["base_url"]["value"]);
+			r.setRequestHeader("Authorization", "Bearer " + config["api_token"]["value"]);
+            var response = r.execute();
+            var responseBody = response.getBody();
+            var httpStatus = response.getStatusCode();
+			gs.info("Completed Get-Source with status code" + httpStatus);
 			return responseBody;
         } catch (ex) {
             var message = ex.message;
@@ -39,13 +61,13 @@ EIQAPIcalls.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-07-07 11:34:50</sys_created_on>
         <sys_id>3a9d054f2f37211055a656e62799b6fa</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>EIQAPIcalls</sys_name>
         <sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope>
         <sys_update_name>sys_script_include_3a9d054f2f37211055a656e62799b6fa</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-07-07 11:54:07</sys_updated_on>
+        <sys_updated_on>2023-07-10 07:55:45</sys_updated_on>
     </sys_script_include>
 </record_update>
