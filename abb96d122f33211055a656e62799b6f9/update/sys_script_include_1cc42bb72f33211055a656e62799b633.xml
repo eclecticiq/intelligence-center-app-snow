@@ -31,6 +31,9 @@ DataIngestion.prototype = {
     observable_snow_table_ingestion: function(observable_data) {
         var instance = new GlideRecord(this.OBSERVABLE_TABLE);
         var created = instance.get("value", observable_data.value);
+        if (!created) {
+            instance.initialize();
+        }
         instance.observable_id = observable_data.id;
         instance.type = observable_data.type;
         instance.value = observable_data.value;
@@ -51,12 +54,15 @@ DataIngestion.prototype = {
     source_snow_table_ingestion: function(source_data) {
         var instance = new GlideRecord(this.SOURCE_TABLE);
         var created = instance.get("name", source_data.name);
+        if (!created) {
+            instance.initialize();
+        }
         instance.name = source_data.name;
         instance.reliability = source_data.reliability;
         instance.source_id = source_data.id;
         instance.source_type = source_data.source_type;
         var source_sys_id = "";
-        if (created == true) {
+        if (created) {
             source_sys_id = instance.update();
         } else {
             source_sys_id = instance.insert();
@@ -65,38 +71,55 @@ DataIngestion.prototype = {
 
     },
 
-    m2m_source_observable_snow_table_ingestion: function(source_sys_id, observable_sys_id) {
-        var instance = new GlideRecord(this.M2M_OBSERVABLE_SOURCE_TABLE);
-        instance.addQuery("x_1088979_eclectic_eiq_source", source_sys_id);
-        instance.addQuery("x_1088979_eclectic_eiq_observable", observable_sys_id);
-        instance.query();
+    
 
-        var present = false;
-        while (instance.next()) {
-            present = true;
-            break;
-        }
-        if (present == false) {
-            instance.x_1088979_eclectic_eiq_source = source_sys_id;
-            instance.x_1088979_eclectic_eiq_observable = observable_sys_id;
-            instance.insert();
+    m2m_source_observable_snow_table_ingestion: function(source_sys_ids, observable_sys_id) {
+        for (var record = 0; record < source_sys_ids.length; record++) {
+            var source_sys_id = source_sys_ids[record];
+            var instance = new GlideRecord(this.M2M_OBSERVABLE_SOURCE_TABLE);
+            instance.addQuery("x_1088979_eclectic_eiq_source", source_sys_id);
+            instance.addQuery("x_1088979_eclectic_eiq_observable", observable_sys_id);
+            instance.query();
+
+            if (!instance.hasNext()) {
+                instance.initialize();
+                instance.x_1088979_eclectic_eiq_source = source_sys_id;
+                instance.x_1088979_eclectic_eiq_observable = observable_sys_id;
+                instance.insert();
+            }
         }
     },
 
-    sources_ingestion: function(sources, observable_sys_id) {
-		var api_caller = new x_1088979_eclectic.EIQAPIcalls();
+    check_source_present: function(source_id) {
+        var instance = new GlideRecord(this.SOURCE_TABLE);
+        var present = instance.get("source_id", source_id);
+        if (present) {
+            return instance.sys_id;
+        }
+        return false;
+    },
+
+    sources_ingestion: function(sources) {
+        var api_caller = new x_1088979_eclectic.EIQAPIcalls();
+        var source_sys_ids = [];
         for (var source_number = 0; source_number < sources.length; source_number++) {
             var source_id = sources[source_number].split("sources/")[1];
+            var source_sys_id = this.check_source_present(source_id);
+            if (source_sys_id) {
+                source_sys_ids.push(source_sys_id);
+                continue;
+            }
+
             var source_data = api_caller.get_source_call(source_id);
             source_data = JSON.parse(source_data);
             if (source_data && source_data.data) {
-                var source_sys_id = this.source_snow_table_ingestion(source_data.data);
-                if (observable_sys_id && source_sys_id) {
-                    this.m2m_source_observable_snow_table_ingestion(source_sys_id, observable_sys_id);
+                source_sys_id = this.source_snow_table_ingestion(source_data.data);
+                if (source_sys_id) {
+                    source_sys_ids.push(source_sys_id);
                 }
             }
-
         }
+        return source_sys_ids;
     },
 
     observable_ingestion: function(observable_value) {
@@ -107,7 +130,10 @@ DataIngestion.prototype = {
         if (observable_data.count > 0) {
             observable_data = observable_data.data[0];
             var observable_sys_id = this.observable_snow_table_ingestion(observable_data);
-			this.sources_ingestion(observable_data.sources, observable_sys_id);			
+            var source_sys_ids = this.sources_ingestion(observable_data.sources);
+            if (observable_sys_id) {
+                this.m2m_source_observable_snow_table_ingestion(source_sys_ids, observable_sys_id);
+            }
         }
     },
 
@@ -117,13 +143,13 @@ DataIngestion.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-07-10 07:35:29</sys_created_on>
         <sys_id>1cc42bb72f33211055a656e62799b633</sys_id>
-        <sys_mod_count>19</sys_mod_count>
+        <sys_mod_count>25</sys_mod_count>
         <sys_name>DataIngestion</sys_name>
         <sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope>
         <sys_update_name>sys_script_include_1cc42bb72f33211055a656e62799b633</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-07-10 09:19:44</sys_updated_on>
+        <sys_updated_on>2023-07-12 13:11:59</sys_updated_on>
     </sys_script_include>
 </record_update>

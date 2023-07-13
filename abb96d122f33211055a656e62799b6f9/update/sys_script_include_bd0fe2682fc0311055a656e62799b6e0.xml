@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1088979_eclectic.FetchObservablesChecksum</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>FetchObservablesChecksum</name>
+        <script><![CDATA[var FetchObservablesChecksum = Class.create();
+FetchObservablesChecksum.prototype = {
+    initialize: function() {},
+
+    fetch_observables: function(config, source_id_sys_id_map) {
+		var last_time = config["observable_last_checkout"]["value"].replace(" ", "T");
+        var offset = 0;
+        var limit = 100;
+        var api_util = new x_1088979_eclectic.EIQAPIcalls();
+		var response = api_util.count_observables(last_time);
+		response = JSON.parse(response);
+		var observable_count = response.count || 0;
+		gs.info("Total Observable found for ingestion: #" + observable_count);
+        var demo_instance = new GlideRecord('sys_user');
+        demo_instance.query();
+        demo_instance.next();
+        for (; offset < observable_count; offset += limit) {
+            var param = "" + offset + "&" + limit + "&" + last_time;
+            gs.eventQueue("x_1088979_eclectic.observables.ingestion", demo_instance, "123", param);
+        }
+    },
+
+    type: 'FetchObservablesChecksum'
+
+
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 10:49:17</sys_created_on>
+        <sys_id>bd0fe2682fc0311055a656e62799b6e0</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>FetchObservablesChecksum</sys_name>
+        <sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope>
+        <sys_update_name>sys_script_include_bd0fe2682fc0311055a656e62799b6e0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-13 09:42:55</sys_updated_on>
+    </sys_script_include>
+</record_update>

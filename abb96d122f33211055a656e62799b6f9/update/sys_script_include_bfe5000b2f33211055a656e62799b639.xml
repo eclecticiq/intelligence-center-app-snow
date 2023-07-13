@@ -40,19 +40,45 @@ EIQConfigurationUtils.prototype = {
 
         return configObj;
     },
+	
+	updateObservableCheckSum: function(checksum_value) {
+		checksum_value = checksum_value || new GlideDateTime();
+		instance = new GlideRecord(this._INTEGRATION_ITEM_CONFIG);
+		instance.addQuery("integration", this._PLUGIN_ID);
+		instance.addQuery("name", "observable_last_checkout");
+        instance.query();
+		while (instance.next()) {
+			instance.value = checksum_value;
+			instance.update();
+		}
+	},
+	
+	disableAutomaticIngestionFlow: function() {
+		instance = new GlideRecord(this._INTEGRATION_ITEM_CONFIG);
+		instance.addQuery("integration", this._PLUGIN_ID);
+		instance.addQuery("name", "automatic_ingestion_flow");
+        instance.query();
+		while (instance.next()) {
+			instance.value = false;
+			instance.update();
+		}
+	},
+	
+	
+	
     type: 'EIQConfigurationUtils'
 };]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-07-07 09:42:13</sys_created_on>
         <sys_id>bfe5000b2f33211055a656e62799b639</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>EIQConfigurationUtils</sys_name>
         <sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope>
         <sys_update_name>sys_script_include_bfe5000b2f33211055a656e62799b639</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-07-11 08:33:46</sys_updated_on>
+        <sys_updated_on>2023-07-13 09:41:10</sys_updated_on>
     </sys_script_include>
 </record_update>

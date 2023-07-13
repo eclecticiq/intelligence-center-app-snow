@@ -10,6 +10,71 @@
         <script><![CDATA[var EIQAPIcalls = Class.create();
 EIQAPIcalls.prototype = {
     initialize: function() {},
+	
+	count_observables: function(last_updated_time){
+		var eiq_util = new x_1088979_eclectic.EIQConfigurationUtils();
+        var config = eiq_util.getConfigurationByIntItemConfigId();
+		try {
+            var request = new sn_ws.RESTMessageV2('x_1088979_eclectic.Fetch EIQ Observable', 'Count Observable');
+			request.setStringParameterNoEscape('base_url', config["base_url"]["value"]);
+            request.setStringParameter('query_key', encodeURIComponent('filter[>last_updated_at]'));
+            request.setStringParameterNoEscape('query_value', last_updated_time);
+            request.setRequestHeader("Authorization", "Bearer " + config["api_token"]["value"]);
+            var response = request.execute();
+            var responseBody = response.getBody();
+            var httpStatus = response.getStatusCode();
+			gs.info("Completed Count Observable API call with status code: " + httpStatus);
+            return responseBody;
+        } catch (ex) {
+            var message = ex.message;
+            gs.error(message);
+            return "";
+        }
+	},
+	
+	fetch_observables_with_date: function(offset, limit, last_updated_time){
+		var eiq_util = new x_1088979_eclectic.EIQConfigurationUtils();
+        var config = eiq_util.getConfigurationByIntItemConfigId();
+		try {
+            var request = new sn_ws.RESTMessageV2('x_1088979_eclectic.Fetch EIQ Observable', 'Fetch EIQ Observable');
+            request.setStringParameterNoEscape('base_url', config["base_url"]["value"]);
+            request.setStringParameter('query_key', encodeURIComponent('filter[>last_updated_at]'));
+            request.setStringParameterNoEscape('offset', offset);
+            request.setStringParameterNoEscape('query_value', last_updated_time);
+            request.setStringParameterNoEscape('limit', limit);
+            request.setRequestHeader("Authorization", "Bearer " + config["api_token"]["value"]);
+            var response = request.execute();
+            var responseBody = response.getBody();
+            var httpStatus = response.getStatusCode();
+			gs.info("Completed List-Observable API call with status code: " + httpStatus);
+            return responseBody;
+        } catch (ex) {
+            var message = ex.message;
+            gs.error(message);
+            return "";
+        }
+	},
+
+    fetch_observables: function(config, offset, limit) {
+        offset = offset || 0;
+        limit = limit || 100;
+        try {
+            var request = new sn_ws.RESTMessageV2('x_1088979_eclectic.Fetch EIQ Observable', 'Fetch EIQ Observable');
+            request.setStringParameterNoEscape('base_url', config["base_url"]["value"]);
+            request.setStringParameter('query_key', encodeURIComponent('filter[>last_updated_at]'));
+            request.setStringParameterNoEscape('offset', offset);
+            request.setStringParameterNoEscape('query_value', config["observable_last_checkout"]["value"].replace(" ", "T"));
+            request.setStringParameterNoEscape('limit', limit);
+            request.setRequestHeader("Authorization", "Bearer " + config["api_token"]["value"]);
+            var response = request.execute();
+            var responseBody = response.getBody();
+            var httpStatus = response.getStatusCode();
+			gs.info("Completed List-Observable API call with status code: " + httpStatus);
+            return responseBody;
+        } catch (ex) {
+            var message = ex.message;
+        }
+    },
 
     observable_lookup_call: function(observable_value) {
         var eiq_util = new x_1088979_eclectic.EIQConfigurationUtils();
@@ -19,41 +84,64 @@ EIQAPIcalls.prototype = {
             var request = new sn_ws.RESTMessageV2('x_1088979_eclectic.Lookup EIQ Observable', 'Lookup EIQ Observable');
             request.setStringParameterNoEscape('observable_value', observable_value);
             request.setStringParameterNoEscape('base_url', config["base_url"]["value"]);
-			request.setStringParameter('query_key', encodeURIComponent('filter[value]'));
-			request.setRequestHeader("Authorization", "Bearer " + config["api_token"]["value"]);
+            request.setStringParameter('query_key', encodeURIComponent('filter[value]'));
+            request.setRequestHeader("Authorization", "Bearer " + config["api_token"]["value"]);
             var response = request.execute();
             var responseBody = response.getBody();
             var httpStatus = response.getStatusCode();
-			gs.info("Completed observable API call with status code" + httpStatus);
-			return responseBody;
+            gs.info("Completed observable API call with status code: " + httpStatus);
+            return responseBody;
         } catch (ex) {
             var message = ex.message;
-			gs.error(message);
-			return "";
+            gs.error(message);
+            return "";
         }
 
     },
-	
-	get_source_call: function(source_id) {
+
+    get_source_call: function(source_id) {
         var eiq_util = new x_1088979_eclectic.EIQConfigurationUtils();
         var config = eiq_util.getConfigurationByIntItemConfigId();
 
         try {
             var request = new sn_ws.RESTMessageV2('x_1088979_eclectic.Get EIQ Source', 'Get EIQ Source');
-			request.setStringParameterNoEscape('source_id', source_id);
-			request.setStringParameterNoEscape('base_url', config["base_url"]["value"]);
-			request.setRequestHeader("Authorization", "Bearer " + config["api_token"]["value"]);
+            request.setStringParameterNoEscape('source_id', source_id);
+            request.setStringParameterNoEscape('base_url', config["base_url"]["value"]);
+            request.setRequestHeader("Authorization", "Bearer " + config["api_token"]["value"]);
             var response = request.execute();
             var responseBody = response.getBody();
             var httpStatus = response.getStatusCode();
-			gs.info("Completed Get-Source API call with status code" + httpStatus);
-			return responseBody;
+            gs.info("Completed Get-Source API call with status code: " + httpStatus);
+            return responseBody;
         } catch (ex) {
             var message = ex.message;
-			gs.error(message);
-			return "";
+            gs.error(message);
+            return "";
         }
+    },
 
+    list_source_call: function(offset, limit) {
+        var eiq_util = new x_1088979_eclectic.EIQConfigurationUtils();
+        var config = eiq_util.getConfigurationByIntItemConfigId();
+		offset = offset || 0;
+		limit = limit || 100;
+
+        try {
+            var request = new sn_ws.RESTMessageV2('x_1088979_eclectic.List of Sources', 'List of Sources');
+            request.setStringParameterNoEscape('offset', offset);
+            request.setStringParameterNoEscape('limit', limit);
+            request.setStringParameterNoEscape('base_url', config["base_url"]["value"]);
+            request.setRequestHeader("Authorization", "Bearer " + config["api_token"]["value"]);
+            var response = request.execute();
+            var responseBody = response.getBody();
+            var httpStatus = response.getStatusCode();
+            gs.info("Completed List-Source API call with status code: " + httpStatus);
+            return responseBody;
+        } catch (ex) {
+            var message = ex.message;
+            gs.error(message);
+            return "";
+        }
     },
 
     type: 'EIQAPIcalls'
@@ -62,13 +150,13 @@ EIQAPIcalls.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-07-07 11:34:50</sys_created_on>
         <sys_id>3a9d054f2f37211055a656e62799b6fa</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>32</sys_mod_count>
         <sys_name>EIQAPIcalls</sys_name>
         <sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope>
         <sys_update_name>sys_script_include_3a9d054f2f37211055a656e62799b6fa</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-07-11 08:17:19</sys_updated_on>
+        <sys_updated_on>2023-07-13 09:34:05</sys_updated_on>
     </sys_script_include>
 </record_update>

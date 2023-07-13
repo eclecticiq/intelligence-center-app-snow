@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_script_action">
+    <sysevent_script_action action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition_script/>
+        <description/>
+        <event_name>x_1088979_eclectic.observables.ingestion</event_name>
+        <name>IngestObservables</name>
+        <order>100</order>
+        <script><![CDATA[var source_id_sys_id_map = event.parm1;
+var offset_limit = event.parm2;
+var offset = offset_limit.split("&")[0];
+var limit = offset_limit.split("&")[1];
+var time = offset_limit.split("&")[2];
+var ingest_util = new x_1088979_eclectic.AllObservableIngestion();
+ingest_util.ingest_observable(offset, limit, time);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]]></script>
+        <synchronous>false</synchronous>
+        <sys_class_name>sysevent_script_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 12:39:47</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>819e0fa82f44311055a656e62799b611</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>IngestObservables</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope>
+        <sys_update_name>sysevent_script_action_819e0fa82f44311055a656e62799b611</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-13 09:27:03</sys_updated_on>
+    </sysevent_script_action>
+</record_update>
