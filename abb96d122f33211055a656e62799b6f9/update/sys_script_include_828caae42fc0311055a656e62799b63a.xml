@@ -11,32 +11,27 @@
 AllSourceIngestion.prototype = {
     initialize: function() {},
 
-    sources_snow_table_ingestion: function(sources_data, source_id_sys_id_map) {
+    sources_snow_table_ingestion: function(sources_data) {
 		var ingestion_util = new x_1088979_eclectic.DataIngestion();
         for (var src_n = 0; src_n < sources_data.length; src_n++) {
-			var source_data = sources_data[src_n];
-            var source_sys_id = ingestion_util.source_snow_table_ingestion(source_data);
-			source_id_sys_id_map[source_data.id] = source_sys_id;
+            ingestion_util.source_snow_table_ingestion(sources_data[src_n]);
         }
-        return source_id_sys_id_map;
     },
 
     all_sources_ingestion: function() {
-        var source_id_sys_id_map = {};
         var api_caller = new x_1088979_eclectic.EIQAPIcalls();
         var offset = 0;
         var page_size = 100;
         var sources_data = api_caller.list_source_call(offset, offset + page_size);
         offset += page_size;
         sources_data = JSON.parse(sources_data);
-        source_id_sys_id_map = this.sources_snow_table_ingestion(sources_data.data, source_id_sys_id_map);
+        this.sources_snow_table_ingestion(sources_data.data);
         var total_count = sources_data.total_count;
         for (; offset < total_count; offset += page_size) {
             sources_data = api_caller.list_source_call(offset, offset + page_size);
             sources_data = JSON.parse(sources_data);
-            source_id_sys_id_map = this.sources_snow_table_ingestion(sources_data.data, source_id_sys_id_map);
+            this.sources_snow_table_ingestion(sources_data.data);
         }
-		return source_id_sys_id_map;
     },
 
 
@@ -50,13 +45,13 @@ AllSourceIngestion.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-07-12 10:17:27</sys_created_on>
         <sys_id>828caae42fc0311055a656e62799b63a</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>AllSourceIngestion</sys_name>
         <sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope>
         <sys_update_name>sys_script_include_828caae42fc0311055a656e62799b63a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-07-12 13:12:48</sys_updated_on>
+        <sys_updated_on>2023-07-14 06:11:33</sys_updated_on>
     </sys_script_include>
 </record_update>

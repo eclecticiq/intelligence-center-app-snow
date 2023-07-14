@@ -9,20 +9,34 @@
         <name>AllObservableIngestion</name>
         <script><![CDATA[var AllObservableIngestion = Class.create();
 AllObservableIngestion.prototype = {
-    initialize: function() {
+    initialize: function() {},
+
+    ingest_m2m_sources: function(sources, observable_sys_id, source_id_sys_id_map) {
+        var ingestion_util = new x_1088979_eclectic.DataIngestion();
+        var source_sys_ids = [];
+        for (var source_number = 0; source_number < sources.length; source_number++) {
+            var source_id = sources[source_number].split("sources/")[1];
+            if (source_id in source_id_sys_id_map) {
+                source_sys_ids.push(source_id_sys_id_map[source_id]);
+            }
+
+        }
+        ingestion_util.m2m_source_observable_snow_table_ingestion(source_sys_ids, observable_sys_id);
     },
-	
-	ingest_observable: function(offset, limit, last_updated_time){
-		var api_caller = new x_1088979_eclectic.EIQAPIcalls();
+
+    ingest_observable: function(offset, limit, last_updated_time) {
+        var ingestion_util = new x_1088979_eclectic.DataIngestion();
+        var api_caller = new x_1088979_eclectic.EIQAPIcalls();
+        var source_id_sys_id_map = ingestion_util.get_source_id_sys_id_map();
         var observable_datas = api_caller.fetch_observables_with_date(offset, limit, last_updated_time);
-		observable_datas = JSON.parse(observable_datas);
-		observable_datas = observable_datas.data;
-		var ingestion_util = new x_1088979_eclectic.DataIngestion();
-		for(var i=0;i<observable_datas.length;i++){
-			ingestion_util.observable_snow_table_ingestion(observable_datas[i]);
-		}
-		
-	},
+        observable_datas = JSON.parse(observable_datas);
+        observable_datas = observable_datas.data;
+        for (var i = 0; i < observable_datas.length; i++) {
+            var observable_sys_id = ingestion_util.observable_snow_table_ingestion(observable_datas[i]);
+            this.ingest_m2m_sources(observable_datas[i].sources, observable_sys_id, source_id_sys_id_map);
+        }
+
+    },
 
     type: 'AllObservableIngestion'
 };]]></script>
@@ -30,13 +44,13 @@ AllObservableIngestion.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-07-13 07:52:38</sys_created_on>
         <sys_id>0a9257b42f00311055a656e62799b658</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name>AllObservableIngestion</sys_name>
         <sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope>
         <sys_update_name>sys_script_include_0a9257b42f00311055a656e62799b658</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-07-13 09:28:00</sys_updated_on>
+        <sys_updated_on>2023-07-14 07:11:59</sys_updated_on>
     </sys_script_include>
 </record_update>

@@ -14,6 +14,17 @@ DataIngestion.prototype = {
     M2M_OBSERVABLE_SOURCE_TABLE: "x_1088979_eclectic_m2m_x_1088979_ec_x_1088979_ec",
 
     initialize: function() {},
+	
+	get_source_id_sys_id_map: function(){
+		var source_id_sys_id_map = {};
+		var instance = new GlideRecord(this.SOURCE_TABLE);
+		instance.setLimit(500);
+		instance.query();
+		while(instance.next()){
+			source_id_sys_id_map[instance.source_id] = instance.getUniqueValue();
+		}
+		return source_id_sys_id_map;
+	},
 
     get_platform_link: function(observable_type, observable_value) {
         var eiq_util = new x_1088979_eclectic.EIQConfigurationUtils();
@@ -143,13 +154,13 @@ DataIngestion.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-07-10 07:35:29</sys_created_on>
         <sys_id>1cc42bb72f33211055a656e62799b633</sys_id>
-        <sys_mod_count>25</sys_mod_count>
+        <sys_mod_count>29</sys_mod_count>
         <sys_name>DataIngestion</sys_name>
         <sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope>
         <sys_update_name>sys_script_include_1cc42bb72f33211055a656e62799b633</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-07-12 13:11:59</sys_updated_on>
+        <sys_updated_on>2023-07-14 06:47:02</sys_updated_on>
     </sys_script_include>
 </record_update>

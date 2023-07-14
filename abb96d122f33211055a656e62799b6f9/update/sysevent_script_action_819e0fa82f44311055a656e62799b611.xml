@@ -6,8 +6,7 @@
         <event_name>x_1088979_eclectic.observables.ingestion</event_name>
         <name>IngestObservables</name>
         <order>100</order>
-        <script><![CDATA[var source_id_sys_id_map = event.parm1;
-var offset_limit = event.parm2;
+        <script><![CDATA[var offset_limit = event.parm1;
 var offset = offset_limit.split("&")[0];
 var limit = offset_limit.split("&")[1];
 var time = offset_limit.split("&")[2];
@@ -39,7 +38,7 @@ ingest_util.ingest_observable(offset, limit, time);
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>819e0fa82f44311055a656e62799b611</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>IngestObservables</sys_name>
         <sys_overrides/>
         <sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
@@ -47,6 +46,6 @@ ingest_util.ingest_observable(offset, limit, time);
         <sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope>
         <sys_update_name>sysevent_script_action_819e0fa82f44311055a656e62799b611</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-07-13 09:27:03</sys_updated_on>
+        <sys_updated_on>2023-07-14 06:13:02</sys_updated_on>
     </sysevent_script_action>
 </record_update>
