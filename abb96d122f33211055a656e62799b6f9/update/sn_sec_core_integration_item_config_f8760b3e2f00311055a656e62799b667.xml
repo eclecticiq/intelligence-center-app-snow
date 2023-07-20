@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_sec_core_integration_item_config">
     <sn_sec_core_integration_item_config action="INSERT_OR_UPDATE">
-        <elem_type>date</elem_type>
-        <help_text/>
+        <elem_type>int</elem_type>
+        <help_text>Please specify the state of Security Incident on which you want to send to EclecticIQ</help_text>
         <integration display_value="EclecticIQ Intelligence Center">39843d1e2f33211055a656e62799b6d9</integration>
-        <label>Observables Last Checkpoint</label>
+        <label>Security Incident State for action</label>
         <mandatory>true</mandatory>
-        <name>observable_last_checkout</name>
-        <order>700</order>
+        <name>state</name>
+        <order>450</order>
         <password_value/>
         <sys_class_name>sn_sec_core_integration_item_config</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-07-05 07:01:49</sys_created_on>
+        <sys_created_on>2023-07-19 11:51:59</sys_created_on>
         <sys_domain>global</sys_domain>
-        <sys_id>f0ceb1d62f73211055a656e62799b68c</sys_id>
-        <sys_mod_count>35</sys_mod_count>
-        <sys_name>observable_last_checkout</sys_name>
+        <sys_id>f8760b3e2f00311055a656e62799b667</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>state</sys_name>
         <sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
         <sys_policy/>
         <sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope>
-        <sys_update_name>sn_sec_core_integration_item_config_f0ceb1d62f73211055a656e62799b68c</sys_update_name>
+        <sys_update_name>sn_sec_core_integration_item_config_f8760b3e2f00311055a656e62799b667</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-07-20 06:07:30</sys_updated_on>
+        <sys_updated_on>2023-07-19 11:58:48</sys_updated_on>
         <type/>
-        <value>2023-07-20 06:07:30</value>
+        <value/>
     </sn_sec_core_integration_item_config>
 </record_update>

@@ -7,20 +7,20 @@
         <mandatory>true</mandatory>
         <name>api_token</name>
         <order>200</order>
-        <password_value>﷞﷟﷒ab18c4cb2f33211055a656e62799b66a﷬﷔1﷬﷭TAbpZLKSWjNKH2tUHrz7Mg==OkHDj1y6ItwULDdT3Kd22t2mHixSoaomExoP1j8R2m7aU1R3NlEcMBwgn0YyoBWt2VARamK3KnjhGg3l2xApaPkGuiNFwDwimIItesEqej0=﷮﷯</password_value>
+        <password_value>﷞﷟﷒ab18c4cb2f33211055a656e62799b66a﷬﷔1﷬﷭r5XH4GOliH4dVcFSSUowCQ==uiVgbJ91xoJjBlW5qjUFd1HBlXfFh37zFThRg24rUrZ0abeyYyYVLEYYkS9hotmwF7-NzckjqjK5KrGc6-zH7be8SN4sBFPY41ViH5zsrJk=﷮﷯</password_value>
         <sys_class_name>sn_sec_core_integration_item_config</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-07-05 07:00:53</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>3b9e795a2f73211055a656e62799b67b</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name>api_token</sys_name>
         <sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
         <sys_policy/>
         <sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope>
         <sys_update_name>sn_sec_core_integration_item_config_3b9e795a2f73211055a656e62799b67b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-07-11 07:32:07</sys_updated_on>
+        <sys_updated_on>2023-07-19 13:25:37</sys_updated_on>
         <type/>
         <value>undefined</value>
     </sn_sec_core_integration_item_config>

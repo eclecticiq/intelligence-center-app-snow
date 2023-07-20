@@ -25,12 +25,12 @@ AllSourceIngestion.prototype = {
         var sources_data = api_caller.list_source_call(offset, offset + page_size);
         offset += page_size;
         sources_data = JSON.parse(sources_data);
-        this.sources_snow_table_ingestion(sources_data.data);
+        this.sources_snow_table_ingestion(sources_data.getValue(data));
         var total_count = sources_data.total_count;
         for (; offset < total_count; offset += page_size) {
             sources_data = api_caller.list_source_call(offset, offset + page_size);
             sources_data = JSON.parse(sources_data);
-            this.sources_snow_table_ingestion(sources_data.data);
+            this.sources_snow_table_ingestion(sources_data.getValue(data));
         }
     },
 
@@ -45,13 +45,13 @@ AllSourceIngestion.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-07-12 10:17:27</sys_created_on>
         <sys_id>828caae42fc0311055a656e62799b63a</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name>AllSourceIngestion</sys_name>
         <sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope>
         <sys_update_name>sys_script_include_828caae42fc0311055a656e62799b63a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-07-14 06:11:33</sys_updated_on>
+        <sys_updated_on>2023-07-20 12:27:29</sys_updated_on>
     </sys_script_include>
 </record_update>

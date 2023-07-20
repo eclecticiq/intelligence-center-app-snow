@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name/>
+        <active>true</active>
+        <client>false</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+
+}]]></client_script_v2>
+        <comments/>
+        <condition>gs.hasRole("admin")</condition>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_button_v2>false</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>true</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style/>
+        <format_for_configurable_workspace>false</format_for_configurable_workspace>
+        <hint/>
+        <isolate_script>false</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <messages/>
+        <name>Create Sighting To EclecticIQ</name>
+        <onclick/>
+        <order>100</order>
+        <script><![CDATA[var util = new x_1088979_eclectic.SnowToEIQIngestionUtil();
+var bundled_extracts = util.getBundleExtracts(current.getUniqueValue());
+
+
+function get_confidence() {
+    var risk_score = current.getValue("risk_score");
+    var confidence = "";
+    if (risk_score < 20) {
+        return "low";
+    } else if (risk_score < 50) {
+        return "medium";
+    }
+    return "high";
+}
+
+function get_security_tags() {
+    var sec = current.getValue("security_tags").split(",");
+    var result = ["ServiceNow Security Incident"];
+    for (var i = 0; i < sec.length; i++) {
+        var request = new GlideRecord("sn_sec_cmn_security_tag");
+        if (request.get(sec[i])) {
+            result.push(request.getValue("name"));
+        }
+    }
+    return result;
+}
+
+var data = {
+    "data": {
+        "data": {
+            "confidence": {
+                "type": "confidence",
+                "value": get_confidence(),
+            },
+            "description": current.getValue("description"),
+            "type": "eclecticiq-sighting",
+            "title": "#" + current.getValue("number") + " " + current.getValue("short_description"),
+            "security_control": {
+                "type": "information-source",
+                "identity": {
+                    "name": "EclecticIQ Platform App for ServiceNow",
+                    "type": "identity"
+                }
+            }
+        },
+        "meta": {
+            "bundled_extracts": bundled_extracts,
+            "tags": get_security_tags()
+        }
+
+    }
+};
+
+var api_caller = new x_1088979_eclectic.EIQAPIcalls();
+var res = api_caller.create_sighting(data);
+action.setRedirectURL(current);
+if (res) {
+	current.work_notes = "Sighting is successfullly created in EclecticIQ";
+	current.update();
+    gs.addInfoMessage("Sighting is successfullly created in EclecticIQ for Security Incident #" + current.getValue("number"));
+} else {
+    gs.addInfoMessage("Sighting creation is failed for Security Incident #" + current.getValue("number") + ". Please check the logs.");
+}]]></script>
+        <show_insert>true</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 07:16:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1d6fc3cf2f00311055a656e62799b6df</sys_id>
+        <sys_mod_count>23</sys_mod_count>
+        <sys_name>Create Sighting To EclecticIQ</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope>
+        <sys_update_name>sys_ui_action_1d6fc3cf2f00311055a656e62799b6df</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-20 13:20:17</sys_updated_on>
+        <table>sn_si_incident</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+</record_update>

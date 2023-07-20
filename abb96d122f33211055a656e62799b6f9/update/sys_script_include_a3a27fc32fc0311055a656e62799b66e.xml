@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1088979_eclectic.SnowToEIQIngestionUtil</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>SnowToEIQIngestionUtil</name>
+        <script><![CDATA[var SnowToEIQIngestionUtil = Class.create();
+SnowToEIQIngestionUtil.prototype = {
+    initialize: function() {},
+
+    extractTypeList: [
+        "actor-id",
+        "address",
+        "asn",
+        "bank-account",
+        "card-owner",
+        "card",
+        "cce",
+        "certificate-serial-number",
+        "city",
+        "company",
+        "country-code",
+        "country",
+        "cpu-architecture",
+        "crypto-address",
+        "cve",
+        "cwe",
+        "domain",
+        "email-subject",
+        "email",
+        "eui-64",
+        "file",
+        "file-size",
+        "forum-name",
+        "forum-room",
+        "forum-thread",
+        "fox-it-portal-uri",
+        "geo-lat",
+        "geo-long",
+        "geo",
+        "handle",
+        "hash-authentihash",
+        "hash-imphash",
+        "hash-md5",
+        "hash-rich-pe-header",
+        "hash-sha1",
+        "hash-sha224",
+        "hash-sha256",
+        "hash-sha384",
+        "hash-sha512",
+        "hash-ssdeep",
+        "hash-vhash",
+        "host",
+        "industry",
+        "inetnum",
+        "ipv4-cidr",
+        "ipv4",
+        "ipv6-cidr",
+        "ipv6",
+        "ja3s-full",
+        "ja3s-hash",
+        "ja3-full",
+        "ja3-hash",
+        "mac-48",
+        "malware-key",
+        "malware",
+        "mutex",
+        "name",
+        "nationality",
+        "netname",
+        "organization",
+        "person",
+        "port",
+        "postcode",
+        "process-name",
+        "process",
+        "product",
+        "region",
+        "registrar",
+        "rule",
+        "snort",
+        "street",
+        "telephone",
+        "uri-hash-sha256",
+        "uri",
+        "user-agent",
+        "winregistry",
+        "yara"
+    ],
+
+    getIncidentObservableId: function(incident_id) {
+        var request = new GlideRecord("sn_ti_m2m_task_observable");
+        request.addQuery("task", incident_id);
+        request.query();
+        var result = [];
+        while (request.next()) {
+            result.push(request.getValue("observable"));
+        }
+        return result;
+    },
+
+    validateExtractType: function(type_id) {
+        var instance = new GlideRecord("sn_ti_observable_type");
+        var find = instance.get(type_id);
+        if (!find) {
+            return "";
+        }
+        var value = instance.getValue("value").toLowerCase();
+        for (var cnt = 0; cnt < this.extractTypeList.length; cnt++) {
+            if (value == this.extractTypeList[cnt]) {
+                return value;
+            }
+        }
+        return "";
+
+    },
+
+
+    getBundleExtracts: function(incident_id) {
+        var extracts = [];
+        var observable_ids = this.getIncidentObservableId(incident_id);
+        for (var cnt = 0; cnt < observable_ids.length; cnt++) {
+            var request = new GlideRecord("sn_ti_observable");
+            if (request.get(observable_ids[cnt])) {
+
+                var kind = this.validateExtractType(request.getValue("type"));
+                if (kind) {
+                    extracts.push({
+                        "kind": kind,
+                        "value": request.getValue("value")
+                    });
+                }
+
+            }
+        }
+        return extracts;
+    },
+
+
+
+
+
+    type: 'SnowToEIQIngestionUtil'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 10:05:02</sys_created_on>
+        <sys_id>a3a27fc32fc0311055a656e62799b66e</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>SnowToEIQIngestionUtil</sys_name>
+        <sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope>
+        <sys_update_name>sys_script_include_a3a27fc32fc0311055a656e62799b66e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-20 12:18:06</sys_updated_on>
+    </sys_script_include>
+</record_update>
