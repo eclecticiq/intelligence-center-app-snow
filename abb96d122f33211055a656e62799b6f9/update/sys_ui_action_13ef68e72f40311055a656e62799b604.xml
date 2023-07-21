@@ -27,18 +27,18 @@
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
         <messages/>
-        <name>Create Sighting To EclecticIQ</name>
+        <name>Create Report To EclecticIQ</name>
         <onclick/>
         <order>100</order>
         <script><![CDATA[var util = new x_1088979_eclectic.SnowToEIQIngestionUtil();
-var res = util.create_entity_to_eiq(current, "eclecticiq-sighting");
+var res = util.create_entity_to_eiq(current, "report");
 action.setRedirectURL(current);
 if (res) {
-	current.work_notes = "Sighting is successfullly created in EclecticIQ";
+	current.work_notes = "Report is successfullly created in EclecticIQ";
 	current.update();
-    gs.addInfoMessage("Sighting is successfullly created in EclecticIQ for Security Incident #" + current.getValue("number"));
+    gs.addInfoMessage("Report is successfullly created in EclecticIQ for Security Incident #" + current.getValue("number"));
 } else {
-    gs.addInfoMessage("Sighting creation is failed for Security Incident #" + current.getValue("number") + ". Please check the logs.");
+    gs.addErrorMessage("Report creation is failed for Security Incident #" + current.getValue("number") + ". Please check the logs.");
 }]]></script>
         <show_insert>true</show_insert>
         <show_multiple_update>false</show_multiple_update>
@@ -46,19 +46,19 @@ if (res) {
         <show_update>true</show_update>
         <sys_class_name>sys_ui_action</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-07-20 07:16:13</sys_created_on>
+        <sys_created_on>2023-07-21 08:46:09</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>1d6fc3cf2f00311055a656e62799b6df</sys_id>
-        <sys_mod_count>24</sys_mod_count>
-        <sys_name>Create Sighting To EclecticIQ</sys_name>
+        <sys_id>13ef68e72f40311055a656e62799b604</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Create Report To EclecticIQ</sys_name>
         <sys_overrides/>
         <sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
         <sys_policy/>
         <sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope>
-        <sys_update_name>sys_ui_action_1d6fc3cf2f00311055a656e62799b6df</sys_update_name>
+        <sys_update_name>sys_ui_action_13ef68e72f40311055a656e62799b604</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-07-21 08:36:55</sys_updated_on>
+        <sys_updated_on>2023-07-21 08:47:24</sys_updated_on>
         <table>sn_si_incident</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
