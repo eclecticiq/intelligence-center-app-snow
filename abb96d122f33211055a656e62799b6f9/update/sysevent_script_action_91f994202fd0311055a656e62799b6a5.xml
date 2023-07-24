@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_script_action">
+    <sysevent_script_action action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition_script/>
+        <description/>
+        <event_name>x_1088979_eclectic.auto.si.ingestion</event_name>
+        <name>SIAutomaticIngestion</name>
+        <order>100</order>
+        <script><![CDATA[gs.info("Automatic Ingestion of Security Incident started");
+var util = new x_1088979_eclectic.SnowToEIQIngestionUtil();
+var eiq_util = new x_1088979_eclectic.EIQConfigurationUtils();
+var config = eiq_util.getConfigurationByIntItemConfigId();
+
+var create_sighting = config["sighting"]["value"];
+var create_report = config["report"]["value"];
+
+
+var inc_n = current.getValue("number");
+var success_msg = "is successfullly created in EclecticIQ for Security Incident #" + inc_n;
+var fail_msg = "creation is failed for Security Incident #" + inc_n + ". Please check the logs.";
+
+if (create_report) {
+    var report_res = util.create_entity_to_eiq(current, "report");
+    if (report_res) {
+        gs.info("Report " + success_msg);
+    } else {
+        gs.error("Report " + fail_msg);
+    }
+
+}
+if (create_sighting) {
+    var sighting_res = util.create_entity_to_eiq(current, "eclecticiq-sighting");
+    if (sighting_res) {
+        gs.info("Sighting " + success_msg);
+    } else {
+        gs.error("Sighting " + fail_msg);
+    }
+
+}]]></script>
+        <synchronous>false</synchronous>
+        <sys_class_name>sysevent_script_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-24 09:46:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>91f994202fd0311055a656e62799b6a5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>SIAutomaticIngestion</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope>
+        <sys_update_name>sysevent_script_action_91f994202fd0311055a656e62799b6a5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-24 10:07:43</sys_updated_on>
+    </sysevent_script_action>
+</record_update>

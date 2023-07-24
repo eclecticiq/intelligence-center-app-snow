@@ -150,7 +150,7 @@ SnowToEIQIngestionUtil.prototype = {
     },
 
     get_security_tags: function(security_tags) {
-        var sec = security_tags.split(",");
+        var sec = security_tags ? security_tags.split(",") : [];
         var result = ["ServiceNow Security Incident"];
         for (var i = 0; i < sec.length; i++) {
             var request = new GlideRecord("sn_sec_cmn_security_tag");
@@ -201,13 +201,13 @@ SnowToEIQIngestionUtil.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-07-20 10:05:02</sys_created_on>
         <sys_id>a3a27fc32fc0311055a656e62799b66e</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>SnowToEIQIngestionUtil</sys_name>
         <sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope>
         <sys_update_name>sys_script_include_a3a27fc32fc0311055a656e62799b66e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-07-21 08:37:15</sys_updated_on>
+        <sys_updated_on>2023-07-24 10:20:19</sys_updated_on>
     </sys_script_include>
 </record_update>

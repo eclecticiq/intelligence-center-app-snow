@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>state</field>
+        <global>false</global>
+        <isolate_script>false</isolate_script>
+        <messages>Configure the state for automatic sending  to EclecticIQ</messages>
+        <name>Automatic SI sent to EIQ</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') {
+        return;
+    }
+    var eiq_util = new x_1088979_eclectic.EIQConfigurationUtils();
+    var config = eiq_util.getConfigurationByIntItemConfigId();
+    var state = config["state"]["value"];
+    var create_sighting = config["create_sighting"]["value"];
+    var create_report = config["create_report"]["value"];
+    if (state != newValue) {
+        return;
+    }
+    var util = new x_1088979_eclectic.SnowToEIQIngestionUtil();
+    if (create_report) {
+        util.create_entity_to_eiq(current, "report");
+
+    }
+    if (create_sighting) {
+        util.create_entity_to_eiq(current, "eclecticiq-sighting");
+
+    }
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-24 08:09:41</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d99afbd02f50311055a656e62799b6f2</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Automatic SI sent to EIQ</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope>
+        <sys_update_name>sys_script_client_d99afbd02f50311055a656e62799b6f2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-24 08:53:52</sys_updated_on>
+        <table>sn_si_incident</table>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</application>
+        <file_path/>
+        <instance_id>a06f34c9dbddf3c052cec5970596196a</instance_id>
+        <instance_name>dev85531</instance_name>
+        <name>sys_script_client_d99afbd02f50311055a656e62799b6f2</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;state&lt;/field&gt;&lt;global&gt;false&lt;/global&gt;&lt;isolate_script&gt;false&lt;/isolate_script&gt;&lt;messages&gt;Configure the state for automatic sending  to EclecticIQ&lt;/messages&gt;&lt;name&gt;Automatic SI sent to EIQ&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') {
+        return;
+    }
+    var eiq_util = new x_1088979_eclectic.EIQConfigurationUtils();
+    var config = eiq_util.getConfigurationByIntItemConfigId();
+    var state = config["state"]["value"];
+    var create_sighting = config["create_sighting"]["value"];
+    var create_report = config["create_report"]["value"];
+    if (state != newValue) {
+        return;
+    }
+    var util = new x_1088979_eclectic.SnowToEIQIngestionUtil();
+    if (create_report) {
+        util.create_entity_to_eiq(current, "report");
+
+    }
+    if (create_sighting) {
+        util.create_entity_to_eiq(current, "eclecticiq-sighting");
+
+    }
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-07-24 08:09:41&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;d99afbd02f50311055a656e62799b6f2&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;Automatic SI sent to EIQ&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic"&gt;abb96d122f33211055a656e62799b6f9&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="EclecticIQ Intelligence Center"&gt;abb96d122f33211055a656e62799b6f9&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_d99afbd02f50311055a656e62799b6f2&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-07-24 08:53:52&lt;/sys_updated_on&gt;&lt;table&gt;sn_si_incident&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-762140545</payload_hash>
+        <record_name>Automatic SI sent to EIQ</record_name>
+        <reverted_from/>
+        <source>469d211a2f33211055a656e62799b6eb</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-24 08:53:53</sys_created_on>
+        <sys_id>67cecc642f90311055a656e62799b679</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>189871ae0ee0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-24 08:53:53</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>6fcecc64fe903110339f354c4cc73878</update_guid>
+        <update_guid_history>6fcecc64fe903110339f354c4cc73878:-762140545,639e40a4259031106925aed25ce502df:226669574,2bba08e0599031104472d7e55b17280e:-326686664,3f3580acda503110243c4280f7ab0770:-125010651,1cb4846c285031106d415cb20023aba4:-1523704184</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-24 09:29:30</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>501f49cf3e874a2a9638ff63e65f87c4</sys_id>
+        <sys_metadata>d99afbd02f50311055a656e62799b6f2</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Automatic SI sent to EIQ</sys_name>
+        <sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
+        <sys_parent display_value="Security Incident">52f8a4f52f77211055a656e62799b620</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope>
+        <sys_scope_delete display_value="">02e8eabc72004d848186e315fd123390</sys_scope_delete>
+        <sys_update_name>sys_script_client_d99afbd02f50311055a656e62799b6f2</sys_update_name>
+        <sys_update_version display_value="sys_script_client_d99afbd02f50311055a656e62799b6f2">67cecc642f90311055a656e62799b679</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-24 09:29:30</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

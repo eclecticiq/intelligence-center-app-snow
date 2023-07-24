@@ -13,15 +13,15 @@
         <sys_created_on>2023-07-19 11:36:29</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>8fd3c7f62f00311055a656e62799b6ef</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>sighting</sys_name>
         <sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
         <sys_policy/>
         <sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope>
         <sys_update_name>sn_sec_core_integration_item_config_8fd3c7f62f00311055a656e62799b6ef</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-07-19 11:44:18</sys_updated_on>
+        <sys_updated_on>2023-07-24 08:10:43</sys_updated_on>
         <type/>
-        <value/>
+        <value>true</value>
     </sn_sec_core_integration_item_config>
 </record_update>
