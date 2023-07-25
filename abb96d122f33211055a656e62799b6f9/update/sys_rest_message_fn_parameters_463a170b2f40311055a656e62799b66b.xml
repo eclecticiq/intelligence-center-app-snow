@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_parameters">
     <sys_rest_message_fn_parameters action="INSERT_OR_UPDATE">
         <name>version</name>
-        <rest_message_function display_value="Create Sighting">1e1ad7cb2f40311055a656e62799b6a3</rest_message_function>
+        <rest_message_function display_value="Create Entity">1e1ad7cb2f40311055a656e62799b6a3</rest_message_function>
         <sys_class_name>sys_rest_message_fn_parameters</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-07-20 07:51:43</sys_created_on>
