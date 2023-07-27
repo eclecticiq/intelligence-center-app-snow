@@ -4,7 +4,7 @@
         <help_text>Please select to perform Automatic Observable Lookup with EclecticIQ on creation</help_text>
         <integration display_value="EclecticIQ Intelligence Center">39843d1e2f33211055a656e62799b6d9</integration>
         <label>Automatic Observable Lookup</label>
-        <mandatory>true</mandatory>
+        <mandatory>false</mandatory>
         <name>auto_lookup</name>
         <order>350</order>
         <password_value/>
@@ -13,14 +13,14 @@
         <sys_created_on>2023-07-26 06:56:25</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>a6e6c2c52f10311055a656e62799b6e3</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>auto_lookup</sys_name>
         <sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
         <sys_policy/>
         <sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope>
         <sys_update_name>sn_sec_core_integration_item_config_a6e6c2c52f10311055a656e62799b6e3</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-07-26 08:40:09</sys_updated_on>
+        <sys_updated_on>2023-07-27 13:13:51</sys_updated_on>
         <type/>
         <value>true</value>
     </sn_sec_core_integration_item_config>

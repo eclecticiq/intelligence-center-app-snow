@@ -117,6 +117,16 @@ SnowToEIQIngestionUtil.prototype = {
         return "";
 
     },
+	
+	getObservableMaliciousness : function(finding){
+		var value_map = {
+			"Unknown": "unknown",
+			"Malicious": "high",
+			"Suspicious": "low",
+			"Clean": "safe"
+		};
+		return value_map[finding] || "unknown";
+	},
 
 
     getBundleExtracts: function(incident_id) {
@@ -185,14 +195,34 @@ SnowToEIQIngestionUtil.prototype = {
 
             }
         };
-		return data;
+        return data;
     },
 
     create_entity_to_eiq: function(incident, entity_type) {
         var api_caller = new x_1088979_eclectic.EIQAPIcalls();
-		var data = this.get_entity_data(incident, entity_type);
+        var data = this.get_entity_data(incident, entity_type);
         var res = api_caller.create_entity(data);
-		return res;
+        return res;
+    },
+
+    create_observable_to_eiq: function(ti_observable) {
+        var kind = this.validateExtractType(ti_observable.getValue("type"));
+        if (!kind) {
+            return "";
+        }
+        var data = {
+            "data": {
+                "meta": {
+                    "maliciousness": this.getObservableMaliciousness(ti_observable.getValue("finding"))
+                },
+                "type": kind,
+                "value": ti_observable.getValue("value")
+            }
+        };
+		
+        var api_caller = new x_1088979_eclectic.EIQAPIcalls();
+        var res = api_caller.create_observable(data);
+        return res;
     },
 
     type: 'SnowToEIQIngestionUtil'
@@ -201,13 +231,13 @@ SnowToEIQIngestionUtil.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-07-20 10:05:02</sys_created_on>
         <sys_id>a3a27fc32fc0311055a656e62799b66e</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_name>SnowToEIQIngestionUtil</sys_name>
         <sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope>
         <sys_update_name>sys_script_include_a3a27fc32fc0311055a656e62799b66e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-07-24 10:28:37</sys_updated_on>
+        <sys_updated_on>2023-07-26 12:39:05</sys_updated_on>
     </sys_script_include>
 </record_update>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_sec_core_integration_item_config">
+    <sn_sec_core_integration_item_config action="DELETE">
+        <elem_type>date</elem_type>
+        <help_text/>
+        <integration display_value="EclecticIQ Intelligence Center">39843d1e2f33211055a656e62799b6d9</integration>
+        <label>Observables Last Checkpoint</label>
+        <mandatory>true</mandatory>
+        <name>observable_last_checkout</name>
+        <order>700</order>
+        <password_value/>
+        <sys_class_name>sn_sec_core_integration_item_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-05 07:01:49</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>f0ceb1d62f73211055a656e62799b68c</sys_id>
+        <sys_mod_count>35</sys_mod_count>
+        <sys_name>observable_last_checkout</sys_name>
+        <sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope>
+        <sys_update_name>sn_sec_core_integration_item_config_f0ceb1d62f73211055a656e62799b68c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-20 06:07:30</sys_updated_on>
+        <type/>
+        <value>2023-07-20 06:07:30</value>
+    </sn_sec_core_integration_item_config>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</application>
+        <file_path/>
+        <instance_id>a06f34c9dbddf3c052cec5970596196a</instance_id>
+        <instance_name>dev85531</instance_name>
+        <name>sn_sec_core_integration_item_config_f0ceb1d62f73211055a656e62799b68c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_sec_core_integration_item_config"><sn_sec_core_integration_item_config action="INSERT_OR_UPDATE"><elem_type>date</elem_type><help_text/><integration display_value="EclecticIQ Intelligence Center">39843d1e2f33211055a656e62799b6d9</integration><label>Observables Last Checkpoint</label><mandatory>true</mandatory><name>observable_last_checkout</name><order>700</order><password_value/><sys_class_name>sn_sec_core_integration_item_config</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-07-05 07:01:49</sys_created_on><sys_domain>global</sys_domain><sys_id>f0ceb1d62f73211055a656e62799b68c</sys_id><sys_mod_count>35</sys_mod_count><sys_name>observable_last_checkout</sys_name><sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package><sys_policy/><sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope><sys_update_name>sn_sec_core_integration_item_config_f0ceb1d62f73211055a656e62799b68c</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-07-20 06:07:30</sys_updated_on><type/><value>2023-07-20 06:07:30</value></sn_sec_core_integration_item_config></record_update>]]></payload>
+        <payload_hash>-2115005089</payload_hash>
+        <record_name>observable_last_checkout</record_name>
+        <reverted_from/>
+        <source>469d211a2f33211055a656e62799b6eb</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 06:07:31</sys_created_on>
+        <sys_id>6b5203472f00311055a656e62799b641</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18971e920be0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-20 06:07:31</sys_updated_on>
+        <type>Integration Item Configuration</type>
+        <update_guid>23520347ac00311014f269b01e342641</update_guid>
+        <update_guid_history>23520347ac00311014f269b01e342641:-2115005089,30958bfa940031101140e7cf519cd379:619160246,e7c483ba610031101f02e18cb8e79a8e:2020051735,ca5dfa325f003110811ae3d2ad37938a:526867417,e84ec9228d0031107622231ddd646c80:1908151881,6366bc5e5cc03110a0aa3b9653979f1d:-77389337,c866389eeec03110f2fefc3265cf677f:-1976863639,c7f3301ea4c03110c0a8c074f209430e:418629355,2ed7a01248c0311011fa4da82ee8c320:-1690403894,3369bf027800311057b93a9dabc27196:-2109521788,1459941d1b40311034d4e150f38c34b7:-647621724,48349cd5824031101853fbef0a714c56:1538312323,6e14d419c0403110d8c1e108bd2073db:-548096313,81c2dc95fe4031100ef4f4286276c6eb:-526874132,bb225495e8403110147664fc69bb6feb:-999371482,ee8e889174403110231233c4ec71e0c6:1768988557,f27e48912a403110596eaf08ffdcc489:966610312,030e8091234031102738f0d8ba54ef79:171970481,1ffd0c51c94031108128d7803015e8fa:-2076167166,43cd4c51db4031100ae7130fcf83caac:885867393,8dab48ddbd003110fae3e6ccddd64def:-1987318557,519b409dc4003110f8bba7825007d492:98512931,4a7b84dd1800311070e4734ba44c07a0:-626342943,99e88c1dd10031102a6da6b6e93c14a3:-438575965,d7d88499410031100760f103bb754f0c:1538312323,6b5604990700311049957606400ddd87:-93084923,af464059f9003110acfad34bd0377199:1538312323,467544594d003110fe80717a7f802f40:327358414,9e654cd544003110f55bbff18ac8da2d:-2130560064,b4e2cc554a0031102c87be48aa00d2a5:-1505463736,c69077f4b18031102a5b54def927c635:-345465387,58af6f74ee803110db345311d8561860:-936435773,6df2b9a0ef00311041cd0c19ed15d625:-1936146147,c4b7a090e6003110409ba3bf267a1c7d:-535254658,bb18c4cbdd332110da4899574f005982:-2028438976,41fe3d1a34732110fee904b59937c4db:-15801780</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="observable_last_checkout">b7eb84692fd0311055a656e62799b671</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-27 11:15:15</sys_created_on>
+        <sys_db_object display_value="" name="sn_sec_core_integration_item_config">sn_sec_core_integration_item_config</sys_db_object>
+        <sys_id>188210736820407089f3b62e48430624</sys_id>
+        <sys_metadata>f0ceb1d62f73211055a656e62799b68c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>observable_last_checkout</sys_name>
+        <sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope>
+        <sys_scope_delete display_value="">02e8eabc72004d848186e315fd123390</sys_scope_delete>
+        <sys_update_name>sn_sec_core_integration_item_config_f0ceb1d62f73211055a656e62799b68c</sys_update_name>
+        <sys_update_version display_value="sn_sec_core_integration_item_config_f0ceb1d62f73211055a656e62799b68c">6b5203472f00311055a656e62799b641</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-27 11:15:15</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

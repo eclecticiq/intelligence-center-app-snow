@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1088979_eclectic.ConfigurationValidation</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>ConfigurationValidation</name>
+        <script><![CDATA[var ConfigurationValidation = Class.create();
+ConfigurationValidation.prototype = {
+    initialize: function() {},
+
+    validate_version_value: function(configs, values) {
+        var version = values[configs.version.sys_id];
+        if ((version != "v1") && (version != "v2")) {
+            return "Invalid version, Please enter either v1 or v2";
+        }
+        return "";
+    },
+
+    _validate_api_response: function(response) {
+        var errorMessage = '';
+        var statusCode = response.getStatusCode();
+        if (statusCode == 401) {
+            errorMessage = 'Method failed with code: 401 - Invalid API Token';
+        } else if (statusCode != 200) {
+            var error = response.getErrorMessage();
+            errorMessage = "Some Internal error with Status code: " + statusCode;
+            if (error.includes("UnknownHostException")) {
+                errorMessage = "Method failed with Invalid Base URL";
+            }
+            gs.error(error);
+        }
+        return errorMessage;
+    },
+
+    _check_feeds_in_api_response: function(response, feed_ids) {
+        var responseBody = response.getBody();
+		responseBody = JSON.parse(responseBody);
+        var data = responseBody.data;
+        var available_feeds = [];
+        var feed_id_list = feed_ids.split(",");
+
+
+        for (var cnt = 0; cnt < data.length; cnt++) {
+            available_feeds.push(data[cnt].id.toString());
+        }
+
+        for (cnt = 0; cnt < feed_id_list.length; cnt++) {
+            if (available_feeds.indexOf(feed_id_list[cnt]) < 0) {
+                return "Invalid Feed IDs. Please enter valid Feed IDs";
+            }
+        }
+        return "";
+    },
+
+
+    validate_feed_ids: function(configs, values) {
+        var api_caller = new x_1088979_eclectic.EIQAPIcalls();
+        var response = api_caller.list_feed_ids_call(configs, values);
+        var errorMessage = this._validate_api_response(response);
+        if (errorMessage != "") {
+            return errorMessage;
+        }
+        var feed_ids = values[configs.feed_ids.sys_id];
+        if (feed_ids == "") {
+            return "";
+        }
+        return this._check_feeds_in_api_response(response, feed_ids);
+    },
+
+    validate_all: function(sysId, values) {
+        try {
+            var eiq_util = new x_1088979_eclectic.EIQConfigurationUtils();
+            var configs = eiq_util.getConfigurationByIntItemConfigId(sysId);
+            var msg = this.validate_version_value(configs, values);
+            if (msg != "") {
+                return msg;
+            }
+            return this.validate_feed_ids(configs, values);
+        } catch (ex) {
+            gs.error();
+            return "There is some internal error.";
+        }
+    },
+
+
+    type: 'ConfigurationValidation'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-27 13:07:53</sys_created_on>
+        <sys_id>0cfad4e52f14311055a656e62799b688</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>ConfigurationValidation</sys_name>
+        <sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope>
+        <sys_update_name>sys_script_include_0cfad4e52f14311055a656e62799b688</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-27 13:29:13</sys_updated_on>
+    </sys_script_include>
+</record_update>

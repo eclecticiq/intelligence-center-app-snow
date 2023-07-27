@@ -5,23 +5,23 @@
         <basic_auth_password/>
         <basic_auth_profile/>
         <basic_auth_user/>
-        <description>APIs related to EIQ Observable</description>
-        <name>EIQObservableCRUD</name>
+        <description/>
+        <name>OutgoingFeedAPIs</name>
         <oauth2_profile/>
         <protocol_name/>
-        <rest_endpoint>${base_url}api/${version}/observables</rest_endpoint>
+        <rest_endpoint>${base_url}api/v2/outgoing-feeds</rest_endpoint>
         <sys_class_name>sys_rest_message</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-07-05 07:35:03</sys_created_on>
-        <sys_id>1816ce122fb3211055a656e62799b6d2</sys_id>
-        <sys_mod_count>5</sys_mod_count>
-        <sys_name>EIQObservableCRUD</sys_name>
+        <sys_created_on>2023-07-27 11:24:56</sys_created_on>
+        <sys_id>c30e84e92fd0311055a656e62799b62d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>OutgoingFeedAPIs</sys_name>
         <sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
         <sys_policy/>
         <sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope>
-        <sys_update_name>sys_rest_message_1816ce122fb3211055a656e62799b6d2</sys_update_name>
+        <sys_update_name>sys_rest_message_c30e84e92fd0311055a656e62799b62d</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-07-26 11:07:58</sys_updated_on>
+        <sys_updated_on>2023-07-27 11:26:54</sys_updated_on>
         <use_basic_auth>false</use_basic_auth>
         <use_mutual_auth>false</use_mutual_auth>
     </sys_rest_message>
