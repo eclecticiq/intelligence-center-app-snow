@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1088979_eclectic.ContentBlockIngestion</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>ContentBlockIngestion</name>
+        <script><![CDATA[var ContentBlockIngestion = Class.create();
+ContentBlockIngestion.prototype = {
+    initialize: function() {},
+	OBSERVABLE_TABLE: "x_1088979_eclectic_eiq_observable",
+	SOURCE_TABLE: "x_1088979_eclectic_eiq_source",
+    M2M_OBSERVABLE_SOURCE_TABLE: "x_1088979_eclectic_m2m_x_1088979_ec_x_1088979_ec",
+
+	
+	_get_field_value: function(headers_dict, row_data, field){
+		if(field in headers_dict){
+			return row_data[headers_dict[field]];
+		}
+		return "";
+		
+	},
+	
+	convert_str_to_datetime: function(value) {
+        value = value.split(".")[0].replace("T", " ");
+        var gdt = new GlideDateTime();
+        gdt.setValue(value);
+        return gdt;
+    },
+	
+	
+
+    save_observable_data: function(headers_dict, row_data){
+		var observable_value = this._get_field_value(headers_dict, row_data, "value");
+		if(!observable_value){return;}
+		
+		var instance = new GlideRecord(this.OBSERVABLE_TABLE);
+        var created = instance.get("value", observable_value);
+        if (!created) {
+            instance.initialize();
+			instance.setValue("value", observable_value);
+
+        }
+		instance.setValue("type", this._get_field_value(headers_dict, row_data, "type"));
+		instance.setValue("platform_link", this._get_field_value(headers_dict, row_data, "value_url"));
+		instance.setValue("maliciousness", this._get_field_value(headers_dict, row_data, "meta.confidence"));
+		instance.setValue("created_at", this._get_field_value(headers_dict, row_data, "timestamp"));
+        var observable_sys_id = "";
+        if (created == true) {
+            observable_sys_id = instance.update();
+        } else {
+            observable_sys_id = instance.insert();
+        }
+        return observable_sys_id;
+		
+	},
+	
+	save_source_data: function(headers_dict, row_data){
+		var instance = new GlideRecord(this.SOURCE_TABLE);
+		var source_name = this._get_field_value(headers_dict, row_data, "source.names");
+		if(!source_name){return;}
+		
+		
+        var created = instance.get("name", source_name);
+        if (!created) {
+            instance.initialize();
+			instance.setValue("name", source_name);
+        }
+		instance.setValue("source_id", this._get_field_value(headers_dict, row_data, "source.ids"));
+		instance.setValue("reliability", this._get_field_value(headers_dict, row_data, "meta.source_reliability"));
+        var source_sys_id = "";
+        if (created) {
+            source_sys_id = instance.update();
+        } else {
+            source_sys_id = instance.insert();
+        }
+        return source_sys_id;
+	},
+	
+	save_m2m_source_observable: function(source_sys_id, observable_sys_id){
+		var instance = new GlideRecord(this.M2M_OBSERVABLE_SOURCE_TABLE);
+            instance.addQuery("x_1088979_eclectic_eiq_source", source_sys_id);
+            instance.addQuery("x_1088979_eclectic_eiq_observable", observable_sys_id);
+            instance.query();
+
+            if (!instance.hasNext()) {
+                instance.initialize();
+				instance.setValue("x_1088979_eclectic_eiq_source", source_sys_id);
+				instance.setValue("x_1088979_eclectic_eiq_observable", observable_sys_id);
+                instance.insert();
+            }
+	},
+	
+	save_content_block_data: function(headers_dict, row_data){
+		var observable_sys_id = this.save_observable_data(headers_dict, row_data);
+		var source_sys_id = this.save_source_data(headers_dict, row_data);
+		this.save_m2m_source_observable(source_sys_id, observable_sys_id);
+	},
+	
+	save_content_block_datas: function(datas) {
+		var patternString = /\n+/;
+        var rows = datas.split(patternString);
+        if (rows.length < 2) {
+            return;
+        }
+        var headers = rows[0].split(",");
+        var headers_dict = {};
+        for (var cnt = 0; cnt < headers.length; cnt++) {
+            headers_dict[headers[cnt]] = cnt;
+        }
+        for (cnt = 1; cnt < rows.length; cnt++) {
+            this.save_content_block_data(headers_dict, rows[cnt].split(","));
+        }
+    },
+
+    ingest_content_block: function(content_block) {
+        var api_caller = new x_1088979_eclectic.EIQAPIcalls();
+        var response = api_caller.get_content_block_data(content_block);
+        if (response == "") {
+            return;
+        }
+        this.save_content_block_datas(response.toString());
+    },
+
+    type: 'ContentBlockIngestion'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-28 08:17:40</sys_created_on>
+        <sys_id>9ccba0b12f90311055a656e62799b623</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>ContentBlockIngestion</sys_name>
+        <sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope>
+        <sys_update_name>sys_script_include_9ccba0b12f90311055a656e62799b623</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-28 11:33:54</sys_updated_on>
+    </sys_script_include>
+</record_update>

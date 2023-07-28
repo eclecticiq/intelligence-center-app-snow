@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_script_action">
+    <sysevent_script_action action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition_script/>
+        <description/>
+        <event_name>x_1088979_eclectic.feed.ingestion</event_name>
+        <name>EIQ Feed Ingestion</name>
+        <order>100</order>
+        <script><![CDATA[var content_block = event.parm1;
+gs.info("starting event" + content_block);
+var contet_block_util = new x_1088979_eclectic.ContentBlockIngestion();
+contet_block_util.ingest_content_block(content_block);
+
+]]></script>
+        <synchronous>false</synchronous>
+        <sys_class_name>sysevent_script_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-28 08:12:35</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>cd27a87d2f50311055a656e62799b62a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>EIQ Feed Ingestion</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope>
+        <sys_update_name>sysevent_script_action_cd27a87d2f50311055a656e62799b62a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-28 08:18:34</sys_updated_on>
+    </sysevent_script_action>
+</record_update>

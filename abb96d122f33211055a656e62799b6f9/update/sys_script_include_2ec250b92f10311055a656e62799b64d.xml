@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1088979_eclectic.OutgoingFeedUtil</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>OutgoingFeedUtil</name>
+        <script><![CDATA[var OutgoingFeedUtil = Class.create();
+OutgoingFeedUtil.prototype = {
+    initialize: function() {
+    },
+	_FEED_DATA_HISTORY_TABLE: "x_1088979_eclectic_feed_data_history",
+	
+	get_content_blocks_instance: function(feed_id, config){
+		var feed_url = config["base_url"]["value"] + "private/outgoing-feed-download/" + feed_id;
+		var instance = new GlideRecord(this._FEED_DATA_HISTORY_TABLE);
+		instance.setLimit(1);
+		instance.addQuery("outgoing_feed_url", feed_url);
+		instance.query();
+		if(instance.next()){
+			return instance;
+		}
+		instance.initialize();
+		instance.setValue("outgoing_feed_url", feed_url);
+		instance.insert();
+		
+		var new_instance = new GlideRecord(this._FEED_DATA_HISTORY_TABLE);
+		new_instance.get(instance.sys_id.toString());
+		return new_instance;
+	},
+	
+	create_content_data_events: function(feed_id, new_content_blocks, config){
+		var instance = this.get_content_blocks_instance(feed_id, config);
+		var content_block = instance.getValue("content_blocks") || "";
+		var ingested_cb = content_block.toString().split(",");
+		for(var cnt=0;cnt<new_content_blocks.length;cnt++){
+			var curr_block = new_content_blocks[cnt];
+			if(ingested_cb.indexOf(curr_block)>=0){
+				continue;
+			}
+			ingested_cb.push(curr_block);
+			gs.eventQueue("x_1088979_eclectic.feed.ingestion", instance, curr_block);
+		}
+		instance.setValue("content_blocks", ingested_cb.join(","));
+		instance.update();
+	},
+	
+	get_outgoing_feed_content: function(feed_id, config){
+		var api_caller = new x_1088979_eclectic.EIQAPIcalls();
+		var response = api_caller.get_outgoing_feeds(feed_id, config);
+		if(response==""){return;}
+		response = JSON.parse(response);
+		this.create_content_data_events(feed_id, response.data.content_blocks, config);
+		
+	},
+	
+	get_outgoing_feeds_content: function(){
+		var eiq_util = new x_1088979_eclectic.EIQConfigurationUtils();
+        var config = eiq_util.getConfigurationByIntItemConfigId();
+		feed_ids = config["feed_ids"]["value"];
+		if(feed_ids==""){
+			return;
+		}
+		feed_ids = feed_ids.split(",");
+		for(var cnt=0;cnt<feed_ids.length;cnt++){
+			this.get_outgoing_feed_content(feed_ids[cnt], config);
+		}
+	},
+	
+
+    type: 'OutgoingFeedUtil'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-28 07:23:45</sys_created_on>
+        <sys_id>2ec250b92f10311055a656e62799b64d</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>OutgoingFeedUtil</sys_name>
+        <sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope>
+        <sys_update_name>sys_script_include_2ec250b92f10311055a656e62799b64d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-28 09:17:14</sys_updated_on>
+    </sys_script_include>
+</record_update>

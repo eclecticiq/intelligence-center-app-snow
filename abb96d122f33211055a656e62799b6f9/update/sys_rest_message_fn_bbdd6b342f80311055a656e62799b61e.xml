@@ -11,20 +11,20 @@
         <oauth2_profile/>
         <protocol_name/>
         <qualified_name>Fetch EIQ Observable [ Count Observable ]</qualified_name>
-        <rest_endpoint>${base_url}api/${version}/observables/?${query_key}=${query_value}&amp;data=false</rest_endpoint>
+        <rest_endpoint>${base_url}/api/${version}/observables/?${query_key}=${query_value}&amp;data=false</rest_endpoint>
         <rest_message display_value="Fetch EIQ Observable">1a9482de2f73211055a656e62799b64f</rest_message>
         <sys_class_name>sys_rest_message_fn</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-07-13 09:32:03</sys_created_on>
         <sys_id>bbdd6b342f80311055a656e62799b61e</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Count Observable</sys_name>
         <sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
         <sys_policy/>
         <sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope>
         <sys_update_name>sys_rest_message_fn_bbdd6b342f80311055a656e62799b61e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-07-19 12:18:12</sys_updated_on>
+        <sys_updated_on>2023-07-28 08:10:37</sys_updated_on>
         <use_basic_auth>false</use_basic_auth>
         <use_mid_server/>
         <use_mutual_auth>false</use_mutual_auth>
