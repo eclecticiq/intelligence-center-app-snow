@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas_pane">
+    <sys_grid_canvas_pane action="DELETE">
+        <grid_canvas display_value="PA EIQ Observables - New Tab">203e21622f80311055a656e62799b6e2</grid_canvas>
+        <height>14</height>
+        <portal_widget display_value="Created 2023-07-18 03:43:45">aa6ee1622f80311055a656e62799b625</portal_widget>
+        <posx>0</posx>
+        <posy>14</posy>
+        <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-18 10:43:45</sys_created_on>
+        <sys_id>e66ee1622f80311055a656e62799b628</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name>203e21622f80311055a656e62799b6e2</sys_name>
+        <sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope>
+        <sys_update_name>sys_grid_canvas_pane_e66ee1622f80311055a656e62799b628</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-18 12:53:16</sys_updated_on>
+        <width>12</width>
+    </sys_grid_canvas_pane>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</application>
+        <file_path/>
+        <instance_id>a06f34c9dbddf3c052cec5970596196a</instance_id>
+        <instance_name>dev85531</instance_name>
+        <name>sys_grid_canvas_pane_e66ee1622f80311055a656e62799b628</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas_pane"><sys_grid_canvas_pane action="INSERT_OR_UPDATE"><grid_canvas display_value="PA EIQ Observables - New Tab">203e21622f80311055a656e62799b6e2</grid_canvas><height>14</height><portal_widget display_value="Created 2023-07-18 03:43:45">aa6ee1622f80311055a656e62799b625</portal_widget><posx>0</posx><posy>14</posy><sys_class_name>sys_grid_canvas_pane</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-07-18 10:43:45</sys_created_on><sys_id>e66ee1622f80311055a656e62799b628</sys_id><sys_mod_count>18</sys_mod_count><sys_name>203e21622f80311055a656e62799b6e2</sys_name><sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package><sys_policy/><sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope><sys_update_name>sys_grid_canvas_pane_e66ee1622f80311055a656e62799b628</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-07-18 12:53:16</sys_updated_on><width>12</width></sys_grid_canvas_pane></record_update>]]></payload>
+        <payload_hash>-352127363</payload_hash>
+        <record_name>203e21622f80311055a656e62799b6e2</record_name>
+        <reverted_from/>
+        <source>469d211a2f33211055a656e62799b6eb</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-18 12:53:16</sys_created_on>
+        <sys_id>7b0c06ae2fc0311055a656e62799b675</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>189690fe5e30000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-18 12:53:16</sys_updated_on>
+        <type>Grid Canvas Pane</type>
+        <update_guid>730cca6ebbc031105ae31a9971d73fe8</update_guid>
+        <update_guid_history>730cca6ebbc031105ae31a9971d73fe8:-352127363,c60c82aeb8c03110802b3ed493f2a6e1:-1489868304,13cbca6e11c03110eeb9640225f092cb:802787663,17bb8e2ef4c03110246f9aaaa534a0de:-1489868304,7319b52e3d8031106e3fa75a90be4b24:542548401,6619fdeadc80311095c76c2c1b5cf2a3:-298384376,9419fdeaea803110e73769875914b19d:-1489868304,e909752ef18031105f9d512fb1adf1d1:542548401,b409752e15803110bc6397e8e93ec4a2:-1489868304,9d563d6ade8031104215925623e840ea:862989937,2ed5f16ae18031105b967c36e79b01db:-1489868304,b3c5f16a0380311082cb86eee69ed587:862989937,13c5f16a3e803110cda0f0a4385d6d35:-1079119118,22a5316a36803110cd277523805c5be4:1273739123,cda479a660803110900a807130be5765:-1079119118,f5833da67e8031103d553bb67962823d:862989937,764335a61c80311091432f3a87675aa8:-1489868304,110fa562b780311000f64cadd63725c9:542548401,e66ee162ee803110ff708e874d87ef2a:1933008100</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-31 05:51:44</sys_created_on>
+        <sys_db_object display_value="" name="sys_grid_canvas_pane">sys_grid_canvas_pane</sys_db_object>
+        <sys_id>3ef875ad123b445088d5e284faa15100</sys_id>
+        <sys_metadata>e66ee1622f80311055a656e62799b628</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>203e21622f80311055a656e62799b6e2</sys_name>
+        <sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope>
+        <sys_scope_delete display_value="">02e8eabc72004d848186e315fd123390</sys_scope_delete>
+        <sys_update_name>sys_grid_canvas_pane_e66ee1622f80311055a656e62799b628</sys_update_name>
+        <sys_update_version display_value="sys_grid_canvas_pane_e66ee1622f80311055a656e62799b628">7b0c06ae2fc0311055a656e62799b675</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-31 05:51:44</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

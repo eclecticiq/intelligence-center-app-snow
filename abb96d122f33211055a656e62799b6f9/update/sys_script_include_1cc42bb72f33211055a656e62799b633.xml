@@ -29,7 +29,8 @@ DataIngestion.prototype = {
     get_platform_link: function(observable_type, observable_value) {
         var eiq_util = new x_1088979_eclectic.EIQConfigurationUtils();
         var config = eiq_util.getConfigurationByIntItemConfigId();
-        return config["base_url"]["value"] + "observables/" + observable_type + "/" + observable_value;
+		var value = config["base_url"]["value"] + "observables/" + observable_type + "/" + observable_value;
+        return encodeURIComponent(value);
     },
 
     convert_str_to_datetime: function(value) {
@@ -44,14 +45,12 @@ DataIngestion.prototype = {
         var created = instance.get("value", observable_data.value);
         if (!created) {
             instance.initialize();
+			instance.setValue("value", observable_data.value);
         }
-        instance.observable_id = observable_data.id;
-        instance.type = observable_data.type;
-        instance.value = observable_data.value;
-        instance.maliciousness = observable_data.meta.maliciousness;
-        instance.platform_link = this.get_platform_link(observable_data.type, observable_data.value);
-        instance.created_at = this.convert_str_to_datetime(observable_data.created_at);
-        instance.last_updated_at = this.convert_str_to_datetime(observable_data.last_updated_at);
+		instance.setValue("type", observable_data.type);
+		instance.setValue("maliciousness", observable_data.meta.maliciousness);
+		instance.setValue("platform_link", this.get_platform_link(observable_data.type, observable_data.value));
+		instance.setValue("created_at", this.convert_str_to_datetime(observable_data.created_at));
         var observable_sys_id = "";
         if (created == true) {
             observable_sys_id = instance.update();
@@ -64,14 +63,15 @@ DataIngestion.prototype = {
 
     source_snow_table_ingestion: function(source_data) {
         var instance = new GlideRecord(this.SOURCE_TABLE);
-        var created = instance.get("name", source_data.name);
+        var created = instance.get("source_id", source_data.id);
         if (!created) {
             instance.initialize();
+			instance.setValue("source_id", source_data.id);
+
         }
-        instance.name = source_data.name;
-        instance.reliability = source_data.reliability;
-        instance.source_id = source_data.id;
-        instance.source_type = source_data.source_type;
+		instance.setValue("name", source_data.name);
+		instance.setValue("reliability", source_data.reliability);
+		
         var source_sys_id = "";
         if (created) {
             source_sys_id = instance.update();
@@ -154,13 +154,13 @@ DataIngestion.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-07-10 07:35:29</sys_created_on>
         <sys_id>1cc42bb72f33211055a656e62799b633</sys_id>
-        <sys_mod_count>30</sys_mod_count>
+        <sys_mod_count>31</sys_mod_count>
         <sys_name>DataIngestion</sys_name>
         <sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope>
         <sys_update_name>sys_script_include_1cc42bb72f33211055a656e62799b633</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-07-20 12:31:21</sys_updated_on>
+        <sys_updated_on>2023-07-31 11:46:57</sys_updated_on>
     </sys_script_include>
 </record_update>
