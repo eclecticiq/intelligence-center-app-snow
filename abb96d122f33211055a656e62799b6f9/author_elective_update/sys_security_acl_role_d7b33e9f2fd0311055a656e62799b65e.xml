@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-02 09:58:36</sys_created_on>
+        <sys_id>d7b33e9f2fd0311055a656e62799b65e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>.x_1088979_eclectic.create</sys_name>
+        <sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope>
+        <sys_security_acl display_value="">c2b3b2df2fd0311055a656e62799b63e</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_d7b33e9f2fd0311055a656e62799b65e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-02 09:58:36</sys_updated_on>
+        <sys_user_role display_value="x_1088979_eclectic.create" name="x_1088979_eclectic.create">381e7d9b2f10311055a656e62799b6e3</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</application>
+        <file_path/>
+        <instance_id>a06f34c9dbddf3c052cec5970596196a</instance_id>
+        <instance_name>dev85531</instance_name>
+        <name>sys_security_acl_role_d7b33e9f2fd0311055a656e62799b65e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-08-02 09:58:36</sys_created_on><sys_id>d7b33e9f2fd0311055a656e62799b65e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>.x_1088979_eclectic.create</sys_name><sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package><sys_policy/><sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope><sys_security_acl display_value="">c2b3b2df2fd0311055a656e62799b63e</sys_security_acl><sys_update_name>sys_security_acl_role_d7b33e9f2fd0311055a656e62799b65e</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-08-02 09:58:36</sys_updated_on><sys_user_role display_value="x_1088979_eclectic.create" name="x_1088979_eclectic.create">381e7d9b2f10311055a656e62799b6e3</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>-1882274018</payload_hash>
+        <record_name>.x_1088979_eclectic.create</record_name>
+        <reverted_from/>
+        <source>469d211a2f33211055a656e62799b6eb</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-02 09:58:36</sys_created_on>
+        <sys_id>1be33adf2fd0311055a656e62799b665</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>189b5af5dc40000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-02 09:58:36</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>53e33adf85d03110585584ccc8064565</update_guid>
+        <update_guid_history>53e33adf85d03110585584ccc8064565:-1882274018</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value=".x_1088979_eclectic.create">d0d936972f14311055a656e62799b63c</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-02 10:24:20</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>b44ca232a955487da57d04530e603941</sys_id>
+        <sys_metadata>d7b33e9f2fd0311055a656e62799b65e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>.x_1088979_eclectic.create</sys_name>
+        <sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope>
+        <sys_scope_delete display_value="">02e8eabc72004d848186e315fd123390</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_d7b33e9f2fd0311055a656e62799b65e</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_d7b33e9f2fd0311055a656e62799b65e">1be33adf2fd0311055a656e62799b665</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-02 10:24:20</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

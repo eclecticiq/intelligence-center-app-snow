@@ -17,14 +17,14 @@
         <override_menu_roles>false</override_menu_roles>
         <query>$pa_dashboard.do?sysparm_dashboard=421e21622f80311055a656e62799b6d7&amp;sysparm_tab=e83ea1622f80311055a656e62799b697&amp;sysparm_cancelable=true&amp;sysparm_editable=undefined&amp;sysparm_active_panel=false</query>
         <report/>
-        <roles/>
+        <roles>x_1088979_eclectic.action,x_1088979_eclectic.create,x_1088979_eclectic.delete,x_1088979_eclectic.view,x_1088979_eclectic.update</roles>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-07-18 10:55:32</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>8df0fde22f80311055a656e62799b6ec</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Dashboard</sys_name>
         <sys_overrides/>
         <sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
@@ -32,7 +32,7 @@
         <sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope>
         <sys_update_name>sys_app_module_8df0fde22f80311055a656e62799b6ec</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-07-18 10:58:11</sys_updated_on>
+        <sys_updated_on>2023-08-02 09:03:54</sys_updated_on>
         <timeline_page/>
         <title>Dashboard</title>
         <uncancelable>false</uncancelable>

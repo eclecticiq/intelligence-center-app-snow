@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role_contains">
+    <sys_user_role_contains action="INSERT_OR_UPDATE">
+        <contains display_value="x_1088979_eclectic.delete" name="x_1088979_eclectic.delete">f6b846572f50311055a656e62799b619</contains>
+        <role display_value="x_1088979_eclectic.admin" name="x_1088979_eclectic.admin">e9b696932f90311055a656e62799b659</role>
+        <sys_class_name>sys_user_role_contains</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-02 07:51:39</sys_created_on>
+        <sys_id>ffd6d6d32f90311055a656e62799b681</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1088979_eclectic.delete.x_1088979_eclectic.admin</sys_name>
+        <sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope>
+        <sys_update_name>sys_user_role_contains_ffd6d6d32f90311055a656e62799b681</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-02 07:51:39</sys_updated_on>
+    </sys_user_role_contains>
+</record_update>

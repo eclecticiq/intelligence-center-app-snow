@@ -3,6 +3,5 @@
         <element display="true" label="name" max_length="250" name="name" type="string_full_utf8"/>
         <element label="reliability" max_length="5" name="reliability" type="string"/>
         <element label="Source ID" max_length="36" name="source_id" type="string"/>
-        <element label="Source type" max_length="100" name="source_type" type="string"/>
     </element>
 </database>
