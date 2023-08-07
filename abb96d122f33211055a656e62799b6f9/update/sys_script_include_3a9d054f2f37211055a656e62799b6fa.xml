@@ -219,29 +219,30 @@ EIQAPIcalls.prototype = {
     },
 
     list_feed_ids_call: function(configs, values) {
-		// executing from config page, so need config and values from there
+        // executing from config page, so need config and values from there
         try {
-			var api_token = values[configs.api_token.sys_id];
-			var encoded_api_token = encodeURIComponent(api_token);
+            var api_token = values[configs.api_token.sys_id];
+            var encoded_api_token = encodeURIComponent(api_token);
             var request = new sn_ws.RESTMessageV2('x_1088979_eclectic.OutgoingFeedAPIs', 'getFilterList');
             request.setStringParameterNoEscape('version', values[configs.version.sys_id]);
             request.setStringParameterNoEscape('base_url', values[configs.base_url.sys_id]);
             request.setRequestHeader("Authorization", "Bearer " + encoded_api_token);
             var response = request.execute();
-			var httpStatus = response.getStatusCode();
+            var httpStatus = response.getStatusCode();
             if (httpStatus != 200) {
-                throw "Error with Feed List API with status: " + httpStatus;
-            }
-            gs.info("Completed Feed List API call with status code: " + httpStatus);
-			return response;
+                gs.error("Error with Feed List API with status: " + httpStatus);
+            }else{
+				gs.info("Completed Feed List API call with status code: " + httpStatus);
+			}
+            return response;
         } catch (ex) {
             var message = ex.message;
             gs.error(message);
             return "";
         }
     },
-	
-	get_outgoing_feeds: function(feed_id, config) {
+
+    get_outgoing_feeds: function(feed_id, config) {
         try {
             var request = new sn_ws.RESTMessageV2('x_1088979_eclectic.OutgoingFeedAPIs', 'OutgoingFeedContentList');
             request.setStringParameterNoEscape('feed_id', feed_id);
@@ -261,16 +262,16 @@ EIQAPIcalls.prototype = {
             return "";
         }
     },
-	
-	get_content_block_data: function(content_block_url) {
+
+    get_content_block_data: function(content_block_url) {
         var eiq_util = new x_1088979_eclectic.EIQConfigurationUtils();
         var config = eiq_util.getConfigurationByIntItemConfigId();
-		content_block_url = config["base_url"]["value"] + content_block_url;
+        content_block_url = config["base_url"]["value"] + content_block_url;
 
         try {
             var request = new sn_ws.RESTMessageV2();
-			request.setEndpoint(content_block_url);
-			request.setHttpMethod("get");
+            request.setEndpoint(content_block_url);
+            request.setHttpMethod("get");
             request.setRequestHeader("Authorization", "Bearer " + config["api_token"]["value"]);
             var response = request.execute();
             var responseBody = response.getBody();
@@ -278,7 +279,7 @@ EIQAPIcalls.prototype = {
             if (httpStatus != 200) {
                 throw "Error with Content Block API with status: " + httpStatus;
             }
-            gs.info("Completed Content Block <" + content_block_url + ">API call with status code: " + httpStatus);
+			gs.info("Completed Content Block <" + content_block_url + ">API call with status code: " + httpStatus);
             return responseBody;
         } catch (ex) {
             var message = ex.message;
@@ -294,13 +295,13 @@ EIQAPIcalls.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-07-07 11:34:50</sys_created_on>
         <sys_id>3a9d054f2f37211055a656e62799b6fa</sys_id>
-        <sys_mod_count>60</sys_mod_count>
+        <sys_mod_count>62</sys_mod_count>
         <sys_name>EIQAPIcalls</sys_name>
         <sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope>
         <sys_update_name>sys_script_include_3a9d054f2f37211055a656e62799b6fa</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-07-28 08:49:49</sys_updated_on>
+        <sys_updated_on>2023-08-07 12:28:01</sys_updated_on>
     </sys_script_include>
 </record_update>
