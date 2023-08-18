@@ -4,6 +4,9 @@
         <element label="maliciousness" max_length="30" name="maliciousness" type="string"/>
         <element label="Platform link" max_length="500" name="platform_link" type="url"/>
         <element label="type" max_length="100" name="type" type="string"/>
-        <element display="true" label="value" max_length="500" name="value" type="string_full_utf8"/>
+        <element display="true" label="value" max_length="500" name="value" type="string_full_utf8" unique="true"/>
+        <index name="index" unique="true">
+            <element name="value"/>
+        </index>
     </element>
 </database>

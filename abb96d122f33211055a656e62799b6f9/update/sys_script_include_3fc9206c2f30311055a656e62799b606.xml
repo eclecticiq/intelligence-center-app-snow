@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1088979_eclectic.EIQDefaultObservableMapping</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>EIQDefaultObservableMapping</name>
+        <script><![CDATA[var EIQDefaultObservableMapping = Class.create();
+EIQDefaultObservableMapping.prototype = {
+    initialize: function() {},
+	TI_OBSERVABLE_TYPE_TABLE: "sn_ti_observable_type",
+	EIQ_OBSERVABLE_TYPE_MAPPING_TABLE: "x_1088979_eclectic_eiq_observable_type_mapping",
+
+    mapping: {
+        "unknown": "",
+        "e-mail": "email",
+        "SHA512": "hash-sha512",
+        "FILEPATH": "",
+        "e-message-id": "",
+        "e-subject": "",
+        "cidr": "",
+        "SHA160": "",
+        "REGKEY": "",
+        "SHA384": "hash-sha384",
+        "atm": "",
+        "domain": "domain",
+        "ipv4-addr": "ipv4",
+        "address": "address",
+        "e-body": "",
+        "ipv4-net-mask": "",
+        "MUTEX": "mutex",
+        "composition": "",
+        "asn": "asn",
+        "ipv6-addr": "ipv6",
+        "serial_number": "",
+        "HOST": "host",
+        "win_exe_file": "",
+        "ipv6-net": "ipv6-cidr",
+        "file": "file",
+        "PEHASH": "",
+        "IMPHASH": "hash-imphash",
+        "filename": "file",
+        "organization": "organization",
+        "mac": "mac-48",
+        "URI": "uri",
+        "phone_number": "telephone",
+        "username": "",
+        "ipv4-net": "ipv4-cidr",
+        "ipv6-net-mask": "",
+        "SHA256": "hash-sha256",
+        "MD5": "hash-md5",
+        "CVEID": "cve",
+        "URL": "uri",
+        "TLD": "domain",
+    },
+	
+	create_or_update_mapping: function(ti_obs_type_sysid, eiq_type){
+		var instance = new GlideRecord(this.EIQ_OBSERVABLE_TYPE_MAPPING_TABLE);
+		var created = instance.get("ti_observable_type", ti_obs_type_sysid);
+		if(!created){
+			instance.initialize();
+			instance.setValue("ti_observable_type", ti_obs_type_sysid);
+			instance.setValue("eiq_observable_type", eiq_type);
+			instance.insert();
+		}
+	},
+
+    populate: function() {
+		var instance = new GlideRecord(this.TI_OBSERVABLE_TYPE_TABLE);
+		instance.setLimit(1000);
+		instance.query();
+		while(instance.next()){
+			var ti_type = instance.getValue("value");
+			if(this.mapping[ti_type]){
+				var eiq_type = this.mapping[ti_type];
+				if(eiq_type){
+					this.create_or_update_mapping(instance.getUniqueValue(), eiq_type);
+				}
+			}
+		}
+    },
+
+    type: 'EIQDefaultObservableMapping'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-18 07:58:31</sys_created_on>
+        <sys_id>3fc9206c2f30311055a656e62799b606</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>EIQDefaultObservableMapping</sys_name>
+        <sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope>
+        <sys_update_name>sys_script_include_3fc9206c2f30311055a656e62799b606</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-18 11:06:48</sys_updated_on>
+    </sys_script_include>
+</record_update>

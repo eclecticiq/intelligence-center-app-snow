@@ -1,0 +1,1559 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="eiq_observable_type" table="x_1088979_eclectic_eiq_observable_type_mapping" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>eiq_observable_type</element>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 12:15:57</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>eiq_observable_type</sys_name>
+            <sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope>
+            <sys_update_name>sys_choice_x_1088979_eclectic_eiq_observable_type_mapping_eiq_observable_type</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 12:15:57</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>actor-id</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6592345c2ff0311055a656e62799b6e7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:06</sys_updated_on>
+            <value>actor-id</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>address</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2592389c2ff0311055a656e62799b666</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:06</sys_updated_on>
+            <value>address</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>asn</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e992389c2ff0311055a656e62799b669</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:06</sys_updated_on>
+            <value>asn</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>bank-account</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a192389c2ff0311055a656e62799b66d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:06</sys_updated_on>
+            <value>bank-account</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>card</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2192389c2ff0311055a656e62799b674</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:06</sys_updated_on>
+            <value>card</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>card-owner</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6992389c2ff0311055a656e62799b670</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:06</sys_updated_on>
+            <value>card-owner</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>cce</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e592389c2ff0311055a656e62799b677</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:07</sys_updated_on>
+            <value>cce</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>certificate-serial-number</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ad92389c2ff0311055a656e62799b67a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:07</sys_updated_on>
+            <value>certificate-serial-number</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>city</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6592389c2ff0311055a656e62799b67e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:07</sys_updated_on>
+            <value>city</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>company</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2d92389c2ff0311055a656e62799b681</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:07</sys_updated_on>
+            <value>company</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>country</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a992389c2ff0311055a656e62799b688</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:07</sys_updated_on>
+            <value>country</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>country-code</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e192389c2ff0311055a656e62799b685</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:07</sys_updated_on>
+            <value>country-code</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>cpu-architecture</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6192389c2ff0311055a656e62799b68c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:07</sys_updated_on>
+            <value>cpu-architecture</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>crypto-address</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2992389c2ff0311055a656e62799b68f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:07</sys_updated_on>
+            <value>crypto-address</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>cve</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ed92389c2ff0311055a656e62799b692</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:07</sys_updated_on>
+            <value>cve</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>cwe</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7d92389c2ff0311055a656e62799b6a2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:07</sys_updated_on>
+            <value>cwe</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>domain</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3592389c2ff0311055a656e62799b6a6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:07</sys_updated_on>
+            <value>domain</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>email</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b192389c2ff0311055a656e62799b6ad</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:07</sys_updated_on>
+            <value>email</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>email-subject</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f992389c2ff0311055a656e62799b6a9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:07</sys_updated_on>
+            <value>email-subject</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>eui-64</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7992389c2ff0311055a656e62799b6b0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:07</sys_updated_on>
+            <value>eui-64</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>file</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:08</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3192389c2ff0311055a656e62799b6b4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:08</sys_updated_on>
+            <value>file</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>file-size</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:08</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f592389c2ff0311055a656e62799b6b7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:08</sys_updated_on>
+            <value>file-size</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>forum-name</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:08</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bd92389c2ff0311055a656e62799b6ba</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:08</sys_updated_on>
+            <value>forum-name</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>forum-room</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:08</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7592389c2ff0311055a656e62799b6be</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:08</sys_updated_on>
+            <value>forum-room</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>forum-thread</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:08</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3d92389c2ff0311055a656e62799b6c1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:08</sys_updated_on>
+            <value>forum-thread</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>fox-it-portal-uri</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:08</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f192389c2ff0311055a656e62799b6c5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:08</sys_updated_on>
+            <value>fox-it-portal-uri</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>geo</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:08</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0a92389c2ff0311055a656e62799b6cf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:08</sys_updated_on>
+            <value>geo</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>geo-lat</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:08</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b992389c2ff0311055a656e62799b6c8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:08</sys_updated_on>
+            <value>geo-lat</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>geo-long</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:08</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4292389c2ff0311055a656e62799b6cc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:08</sys_updated_on>
+            <value>geo-long</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>handle</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:08</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ce92389c2ff0311055a656e62799b6d2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:08</sys_updated_on>
+            <value>handle</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>hash-authentihash</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:08</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8692389c2ff0311055a656e62799b6d6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:08</sys_updated_on>
+            <value>hash-authentihash</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>hash-imphash</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4e92389c2ff0311055a656e62799b6d9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:09</sys_updated_on>
+            <value>hash-imphash</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>hash-md5</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0692389c2ff0311055a656e62799b6dd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:09</sys_updated_on>
+            <value>hash-md5</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>hash-rich-pe-header</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ca92389c2ff0311055a656e62799b6e0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:09</sys_updated_on>
+            <value>hash-rich-pe-header</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>hash-sha1</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8292389c2ff0311055a656e62799b6e4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:09</sys_updated_on>
+            <value>hash-sha1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>hash-sha224</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4a92389c2ff0311055a656e62799b6e7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:09</sys_updated_on>
+            <value>hash-sha224</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>hash-sha256</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0292389c2ff0311055a656e62799b6eb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:09</sys_updated_on>
+            <value>hash-sha256</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>hash-sha384</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c692389c2ff0311055a656e62799b6ee</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:09</sys_updated_on>
+            <value>hash-sha384</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>hash-sha512</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8e92389c2ff0311055a656e62799b6f1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:09</sys_updated_on>
+            <value>hash-sha512</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>hash-ssdeep</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5692389c2ff0311055a656e62799b6f5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:09</sys_updated_on>
+            <value>hash-ssdeep</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>hash-vhash</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1e92389c2ff0311055a656e62799b6f8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:09</sys_updated_on>
+            <value>hash-vhash</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>host</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d292389c2ff0311055a656e62799b6fc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:09</sys_updated_on>
+            <value>host</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>industry</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9a92389c2ff0311055a656e62799b6ff</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:10</sys_updated_on>
+            <value>industry</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>inetnum</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5292789c2ff0311055a656e62799b603</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:10</sys_updated_on>
+            <value>inetnum</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>ipv4</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>de92789c2ff0311055a656e62799b609</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:10</sys_updated_on>
+            <value>ipv4</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>ipv4-cidr</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1a92789c2ff0311055a656e62799b606</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:10</sys_updated_on>
+            <value>ipv4-cidr</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>ipv6</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6e92789c2ff0311055a656e62799b610</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:10</sys_updated_on>
+            <value>ipv6</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>ipv6-cidr</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9692789c2ff0311055a656e62799b60d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:10</sys_updated_on>
+            <value>ipv6-cidr</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>ja3-full</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a292789c2ff0311055a656e62799b61b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:11</sys_updated_on>
+            <value>ja3-full</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>ja3-hash</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6a92789c2ff0311055a656e62799b61e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:11</sys_updated_on>
+            <value>ja3-hash</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>ja3s-full</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2692789c2ff0311055a656e62799b614</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:10</sys_updated_on>
+            <value>ja3s-full</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>ja3s-hash</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ea92789c2ff0311055a656e62799b617</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:10</sys_updated_on>
+            <value>ja3s-hash</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>mac-48</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e692789c2ff0311055a656e62799b62e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:11</sys_updated_on>
+            <value>mac-48</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>malware</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6692789c2ff0311055a656e62799b635</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:11</sys_updated_on>
+            <value>malware</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>malware-key</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ae92789c2ff0311055a656e62799b631</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:11</sys_updated_on>
+            <value>malware-key</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>mutex</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f292789c2ff0311055a656e62799b645</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:11</sys_updated_on>
+            <value>mutex</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>name</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ba92789c2ff0311055a656e62799b648</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:11</sys_updated_on>
+            <value>name</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>nationality</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:12</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7292789c2ff0311055a656e62799b64c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:12</sys_updated_on>
+            <value>nationality</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>netname</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:12</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3a92789c2ff0311055a656e62799b64f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:12</sys_updated_on>
+            <value>netname</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>organization</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:12</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fe92789c2ff0311055a656e62799b652</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:12</sys_updated_on>
+            <value>organization</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>person</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:12</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b692789c2ff0311055a656e62799b656</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:12</sys_updated_on>
+            <value>person</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>port</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:12</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7e92789c2ff0311055a656e62799b659</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:12</sys_updated_on>
+            <value>port</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>postcode</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:12</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3692789c2ff0311055a656e62799b65d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:12</sys_updated_on>
+            <value>postcode</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>process</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8392789c2ff0311055a656e62799b664</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:13</sys_updated_on>
+            <value>process</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>process-name</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:12</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>cb92789c2ff0311055a656e62799b660</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:12</sys_updated_on>
+            <value>process-name</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>product</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4b92789c2ff0311055a656e62799b667</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:13</sys_updated_on>
+            <value>product</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>region</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0392789c2ff0311055a656e62799b66b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:13</sys_updated_on>
+            <value>region</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>registrar</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c792789c2ff0311055a656e62799b66e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:13</sys_updated_on>
+            <value>registrar</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>rule</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8f92789c2ff0311055a656e62799b671</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:13</sys_updated_on>
+            <value>rule</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>snort</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5792789c2ff0311055a656e62799b675</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:13</sys_updated_on>
+            <value>snort</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>street</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5392789c2ff0311055a656e62799b69e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:13</sys_updated_on>
+            <value>street</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>telephone</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:14</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1b92789c2ff0311055a656e62799b6a1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:14</sys_updated_on>
+            <value>telephone</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>uri</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:14</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9792789c2ff0311055a656e62799b6a8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:14</sys_updated_on>
+            <value>uri</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>uri-hash-sha256</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:14</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>df92789c2ff0311055a656e62799b6a4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:14</sys_updated_on>
+            <value>uri-hash-sha256</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>user-agent</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:14</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5f92789c2ff0311055a656e62799b6ab</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:14</sys_updated_on>
+            <value>user-agent</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>winregistry</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:14</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1792789c2ff0311055a656e62799b6af</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:14</sys_updated_on>
+            <value>winregistry</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>eiq_observable_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>yara</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_eiq_observable_type_mapping</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-17 13:23:14</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>db92789c2ff0311055a656e62799b6b2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-17 13:23:14</sys_updated_on>
+            <value>yara</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

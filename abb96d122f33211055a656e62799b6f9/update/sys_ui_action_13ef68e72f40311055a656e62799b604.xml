@@ -35,9 +35,9 @@ var res = util.create_entity_to_eiq(current, "report");
 action.setRedirectURL(current);
 var inc_n = current.getValue("number");
 if (res) {
-    current.work_notes = "Report is successfullly created in EclecticIQ";
+    current.work_notes = "Report is successfully created in EclecticIQ";
     current.update();
-    gs.addInfoMessage("Report is successfullly created in EclecticIQ for Security Incident #" + inc_n);
+    gs.addInfoMessage("Report is successfully created in EclecticIQ for Security Incident #" + inc_n);
 } else {
     gs.addErrorMessage("Report creation is failed for Security Incident #" + inc_n + ". Please check the logs.");
 }]]></script>
@@ -51,7 +51,7 @@ if (res) {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>13ef68e72f40311055a656e62799b604</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Create Report To EclecticIQ</sys_name>
         <sys_overrides/>
         <sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
@@ -59,7 +59,7 @@ if (res) {
         <sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope>
         <sys_update_name>sys_ui_action_13ef68e72f40311055a656e62799b604</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-08-02 07:19:12</sys_updated_on>
+        <sys_updated_on>2023-08-17 09:31:21</sys_updated_on>
         <table>sn_si_incident</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

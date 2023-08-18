@@ -19,11 +19,23 @@ ConfigurationValidation.prototype = {
         return "";
     },
 
+    validate_state_value: function(configs, values) {
+        var state = values[configs.state.sys_id];
+        if (!state) {
+            if (values[configs.sighting.sys_id] || values[configs.report.sys_id]) {
+                return "Invalid State, Please specify the state";
+            }
+        }
+        return "";
+    },
+
     _validate_api_response: function(response) {
         var errorMessage = '';
         var statusCode = response.getStatusCode();
         if (statusCode == 401) {
             errorMessage = 'Method failed with code: 401 - Invalid API Token';
+        } else if (statusCode == 0) {
+            errorMessage = "Invalid Credentials.";
         } else if (statusCode != 200) {
             var error = response.getErrorMessage();
             errorMessage = "Some Internal error with Status code: " + statusCode;
@@ -37,7 +49,7 @@ ConfigurationValidation.prototype = {
 
     _check_feeds_in_api_response: function(response, feed_ids) {
         var responseBody = response.getBody();
-		responseBody = JSON.parse(responseBody);
+        responseBody = JSON.parse(responseBody);
         var data = responseBody.data;
         var available_feeds = [];
         var feed_id_list = feed_ids.split(",");
@@ -78,7 +90,16 @@ ConfigurationValidation.prototype = {
             if (msg != "") {
                 return msg;
             }
-            return this.validate_feed_ids(configs, values);
+            msg = this.validate_state_value(configs, values);
+            if (msg != "") {
+                return msg;
+            }
+            msg = this.validate_feed_ids(configs, values);
+            if (msg == "") {
+                gs.eventQueue("x_1088979_eclectic.default.obs.type.mapp");
+				gs.info("Event is created for updating default observable mapping");
+            }
+            return msg;
         } catch (ex) {
             gs.error();
             return "There is some internal error.";
@@ -92,13 +113,13 @@ ConfigurationValidation.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-07-27 13:07:53</sys_created_on>
         <sys_id>0cfad4e52f14311055a656e62799b688</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>ConfigurationValidation</sys_name>
         <sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope>
         <sys_update_name>sys_script_include_0cfad4e52f14311055a656e62799b688</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-07-27 13:29:13</sys_updated_on>
+        <sys_updated_on>2023-08-18 11:01:09</sys_updated_on>
     </sys_script_include>
 </record_update>

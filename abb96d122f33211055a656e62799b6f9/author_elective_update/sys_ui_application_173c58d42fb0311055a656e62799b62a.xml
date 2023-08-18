@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_application">
+    <sys_ui_application action="DELETE">
+        <active>true</active>
+        <hint/>
+        <name>Maps</name>
+        <order/>
+        <roles>x_1088979_eclectic.maps_user</roles>
+        <sys_class_name>sys_ui_application</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-17 11:45:29</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>173c58d42fb0311055a656e62799b62a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Maps</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope>
+        <sys_update_name>sys_ui_application_173c58d42fb0311055a656e62799b62a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-17 11:45:29</sys_updated_on>
+    </sys_ui_application>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</application>
+        <file_path/>
+        <instance_id>a06f34c9dbddf3c052cec5970596196a</instance_id>
+        <instance_name>dev85531</instance_name>
+        <name>sys_ui_application_173c58d42fb0311055a656e62799b62a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_application"><sys_ui_application action="INSERT_OR_UPDATE"><active>true</active><hint/><name>Maps</name><order/><roles>x_1088979_eclectic.maps_user</roles><sys_class_name>sys_ui_application</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-08-17 11:45:29</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>173c58d42fb0311055a656e62799b62a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Maps</sys_name><sys_overrides/><sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package><sys_policy/><sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope><sys_update_name>sys_ui_application_173c58d42fb0311055a656e62799b62a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-08-17 11:45:29</sys_updated_on></sys_ui_application></record_update>]]></payload>
+        <payload_hash>-1326477004</payload_hash>
+        <record_name>Maps</record_name>
+        <reverted_from/>
+        <source>469d211a2f33211055a656e62799b6eb</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-17 11:45:29</sys_created_on>
+        <sys_id>5f3c58d42fb0311055a656e62799b62c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18a03509c280000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-17 11:45:29</sys_updated_on>
+        <type>Application Menu</type>
+        <update_guid>973c58d4c7b03110d9caf9e48324d52c</update_guid>
+        <update_guid_history>973c58d4c7b03110d9caf9e48324d52c:-1326477004</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-18 11:21:50</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_application">sys_ui_application</sys_db_object>
+        <sys_id>0c2722396bc4491ab51f35cc1fbfd644</sys_id>
+        <sys_metadata>173c58d42fb0311055a656e62799b62a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Maps</sys_name>
+        <sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope>
+        <sys_scope_delete display_value="">02e8eabc72004d848186e315fd123390</sys_scope_delete>
+        <sys_update_name>sys_ui_application_173c58d42fb0311055a656e62799b62a</sys_update_name>
+        <sys_update_version display_value="sys_ui_application_173c58d42fb0311055a656e62799b62a">5f3c58d42fb0311055a656e62799b62c</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-18 11:21:50</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

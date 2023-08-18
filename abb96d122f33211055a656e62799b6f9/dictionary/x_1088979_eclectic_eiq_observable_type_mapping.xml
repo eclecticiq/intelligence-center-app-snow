@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="0762249c2fb0311055a656e62799b670" label="EIQ Observable Type Mapping" max_length="40" name="x_1088979_eclectic_eiq_observable_type_mapping" type="collection">
+        <element choice="3" default="ipv4" label="EIQ Observable Type" max_length="40" name="eiq_observable_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="actor-id" value="actor-id"/>
+                <element inactive_on_update="false" label="address" value="address"/>
+                <element inactive_on_update="false" label="asn" value="asn"/>
+                <element inactive_on_update="false" label="bank-account" value="bank-account"/>
+                <element inactive_on_update="false" label="card" value="card"/>
+                <element inactive_on_update="false" label="card-owner" value="card-owner"/>
+                <element inactive_on_update="false" label="cce" value="cce"/>
+                <element inactive_on_update="false" label="certificate-serial-number" value="certificate-serial-number"/>
+                <element inactive_on_update="false" label="city" value="city"/>
+                <element inactive_on_update="false" label="company" value="company"/>
+                <element inactive_on_update="false" label="country" value="country"/>
+                <element inactive_on_update="false" label="country-code" value="country-code"/>
+                <element inactive_on_update="false" label="cpu-architecture" value="cpu-architecture"/>
+                <element inactive_on_update="false" label="crypto-address" value="crypto-address"/>
+                <element inactive_on_update="false" label="cve" value="cve"/>
+                <element inactive_on_update="false" label="cwe" value="cwe"/>
+                <element inactive_on_update="false" label="domain" value="domain"/>
+                <element inactive_on_update="false" label="email" value="email"/>
+                <element inactive_on_update="false" label="email-subject" value="email-subject"/>
+                <element inactive_on_update="false" label="eui-64" value="eui-64"/>
+                <element inactive_on_update="false" label="file" value="file"/>
+                <element inactive_on_update="false" label="file-size" value="file-size"/>
+                <element inactive_on_update="false" label="forum-name" value="forum-name"/>
+                <element inactive_on_update="false" label="forum-room" value="forum-room"/>
+                <element inactive_on_update="false" label="forum-thread" value="forum-thread"/>
+                <element inactive_on_update="false" label="fox-it-portal-uri" value="fox-it-portal-uri"/>
+                <element inactive_on_update="false" label="geo" value="geo"/>
+                <element inactive_on_update="false" label="geo-lat" value="geo-lat"/>
+                <element inactive_on_update="false" label="geo-long" value="geo-long"/>
+                <element inactive_on_update="false" label="handle" value="handle"/>
+                <element inactive_on_update="false" label="hash-authentihash" value="hash-authentihash"/>
+                <element inactive_on_update="false" label="hash-imphash" value="hash-imphash"/>
+                <element inactive_on_update="false" label="hash-md5" value="hash-md5"/>
+                <element inactive_on_update="false" label="hash-rich-pe-header" value="hash-rich-pe-header"/>
+                <element inactive_on_update="false" label="hash-sha1" value="hash-sha1"/>
+                <element inactive_on_update="false" label="hash-sha224" value="hash-sha224"/>
+                <element inactive_on_update="false" label="hash-sha256" value="hash-sha256"/>
+                <element inactive_on_update="false" label="hash-sha384" value="hash-sha384"/>
+                <element inactive_on_update="false" label="hash-sha512" value="hash-sha512"/>
+                <element inactive_on_update="false" label="hash-ssdeep" value="hash-ssdeep"/>
+                <element inactive_on_update="false" label="hash-vhash" value="hash-vhash"/>
+                <element inactive_on_update="false" label="host" value="host"/>
+                <element inactive_on_update="false" label="industry" value="industry"/>
+                <element inactive_on_update="false" label="inetnum" value="inetnum"/>
+                <element inactive_on_update="false" label="ipv4" value="ipv4"/>
+                <element inactive_on_update="false" label="ipv4-cidr" value="ipv4-cidr"/>
+                <element inactive_on_update="false" label="ipv6" value="ipv6"/>
+                <element inactive_on_update="false" label="ipv6-cidr" value="ipv6-cidr"/>
+                <element inactive_on_update="false" label="ja3-full" value="ja3-full"/>
+                <element inactive_on_update="false" label="ja3-hash" value="ja3-hash"/>
+                <element inactive_on_update="false" label="ja3s-full" value="ja3s-full"/>
+                <element inactive_on_update="false" label="ja3s-hash" value="ja3s-hash"/>
+                <element inactive_on_update="false" label="mac-48" value="mac-48"/>
+                <element inactive_on_update="false" label="malware" value="malware"/>
+                <element inactive_on_update="false" label="malware-key" value="malware-key"/>
+                <element inactive_on_update="false" label="mutex" value="mutex"/>
+                <element inactive_on_update="false" label="name" value="name"/>
+                <element inactive_on_update="false" label="nationality" value="nationality"/>
+                <element inactive_on_update="false" label="netname" value="netname"/>
+                <element inactive_on_update="false" label="organization" value="organization"/>
+                <element inactive_on_update="false" label="person" value="person"/>
+                <element inactive_on_update="false" label="port" value="port"/>
+                <element inactive_on_update="false" label="postcode" value="postcode"/>
+                <element inactive_on_update="false" label="process" value="process"/>
+                <element inactive_on_update="false" label="process-name" value="process-name"/>
+                <element inactive_on_update="false" label="product" value="product"/>
+                <element inactive_on_update="false" label="region" value="region"/>
+                <element inactive_on_update="false" label="registrar" value="registrar"/>
+                <element inactive_on_update="false" label="rule" value="rule"/>
+                <element inactive_on_update="false" label="snort" value="snort"/>
+                <element inactive_on_update="false" label="street" value="street"/>
+                <element inactive_on_update="false" label="telephone" value="telephone"/>
+                <element inactive_on_update="false" label="uri" value="uri"/>
+                <element inactive_on_update="false" label="uri-hash-sha256" value="uri-hash-sha256"/>
+                <element inactive_on_update="false" label="user-agent" value="user-agent"/>
+                <element inactive_on_update="false" label="winregistry" value="winregistry"/>
+                <element inactive_on_update="false" label="yara" value="yara"/>
+            </choice>
+        </element>
+        <element display="true" label="TI Observable Type" max_length="32" name="ti_observable_type" primary="true" reference="sn_ti_observable_type" type="reference" unique="true"/>
+        <index name="index" unique="true">
+            <element name="ti_observable_type"/>
+        </index>
+    </element>
+</database>

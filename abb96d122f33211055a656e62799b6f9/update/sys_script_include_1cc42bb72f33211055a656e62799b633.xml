@@ -14,22 +14,22 @@ DataIngestion.prototype = {
     M2M_OBSERVABLE_SOURCE_TABLE: "x_1088979_eclectic_m2m_x_1088979_ec_x_1088979_ec",
 
     initialize: function() {},
-	
-	get_source_id_sys_id_map: function(){
-		var source_id_sys_id_map = {};
-		var instance = new GlideRecord(this.SOURCE_TABLE);
-		instance.setLimit(500);
-		instance.query();
-		while(instance.next()){
-			source_id_sys_id_map[instance.source_id] = instance.getUniqueValue();
-		}
-		return source_id_sys_id_map;
-	},
+
+    get_source_id_sys_id_map: function() {
+        var source_id_sys_id_map = {};
+        var instance = new GlideRecord(this.SOURCE_TABLE);
+        instance.setLimit(500);
+        instance.query();
+        while (instance.next()) {
+            source_id_sys_id_map[instance.source_id] = instance.getUniqueValue();
+        }
+        return source_id_sys_id_map;
+    },
 
     get_platform_link: function(observable_type, observable_value) {
         var eiq_util = new x_1088979_eclectic.EIQConfigurationUtils();
         var config = eiq_util.getConfigurationByIntItemConfigId();
-		var value = config["base_url"]["value"] + "observables/" + observable_type + "/" + observable_value;
+        var value = config["base_url"]["value"] + "observables/" + observable_type + "/" + observable_value;
         return encodeURIComponent(value);
     },
 
@@ -45,12 +45,12 @@ DataIngestion.prototype = {
         var created = instance.get("value", observable_data.value);
         if (!created) {
             instance.initialize();
-			instance.setValue("value", observable_data.value);
+            instance.setValue("value", observable_data.value);
         }
-		instance.setValue("type", observable_data.type);
-		instance.setValue("maliciousness", observable_data.meta.maliciousness);
-		instance.setValue("platform_link", this.get_platform_link(observable_data.type, observable_data.value));
-		instance.setValue("created_at", this.convert_str_to_datetime(observable_data.created_at));
+        instance.setValue("type", observable_data.type);
+        instance.setValue("maliciousness", observable_data.meta.maliciousness);
+        instance.setValue("platform_link", this.get_platform_link(observable_data.type, observable_data.value));
+        instance.setValue("created_at", this.convert_str_to_datetime(observable_data.created_at));
         var observable_sys_id = "";
         if (created == true) {
             observable_sys_id = instance.update();
@@ -66,12 +66,12 @@ DataIngestion.prototype = {
         var created = instance.get("source_id", source_data.id);
         if (!created) {
             instance.initialize();
-			instance.setValue("source_id", source_data.id);
+            instance.setValue("source_id", source_data.id);
 
         }
-		instance.setValue("name", source_data.name);
-		instance.setValue("reliability", source_data.reliability);
-		
+        instance.setValue("name", source_data.name);
+        instance.setValue("reliability", source_data.reliability);
+
         var source_sys_id = "";
         if (created) {
             source_sys_id = instance.update();
@@ -82,7 +82,7 @@ DataIngestion.prototype = {
 
     },
 
-    
+
 
     m2m_source_observable_snow_table_ingestion: function(source_sys_ids, observable_sys_id) {
         for (var record = 0; record < source_sys_ids.length; record++) {
@@ -94,8 +94,8 @@ DataIngestion.prototype = {
 
             if (!instance.hasNext()) {
                 instance.initialize();
-				instance.setValue("x_1088979_eclectic_eiq_source", source_sys_id);
-				instance.setValue("x_1088979_eclectic_eiq_observable", observable_sys_id);
+                instance.setValue("x_1088979_eclectic_eiq_source", source_sys_id);
+                instance.setValue("x_1088979_eclectic_eiq_observable", observable_sys_id);
                 instance.insert();
             }
         }
@@ -136,16 +136,21 @@ DataIngestion.prototype = {
     observable_ingestion: function(observable_value) {
         var api_caller = new x_1088979_eclectic.EIQAPIcalls();
         var observable_data = api_caller.observable_lookup_call(observable_value);
-        observable_data = JSON.parse(observable_data);
-
-        if (observable_data.count > 0) {
-            observable_data = observable_data.data[0];
-            var observable_sys_id = this.observable_snow_table_ingestion(observable_data);
-            var source_sys_ids = this.sources_ingestion(observable_data.sources);
-            if (observable_sys_id) {
-                this.m2m_source_observable_snow_table_ingestion(source_sys_ids, observable_sys_id);
-            }
+        if (observable_data == "") {
+			return "EIQ Observable Lookup is Failed, Please check the credentials";
         }
+        observable_data = JSON.parse(observable_data);
+        if (observable_data.count < 1) {
+            return "EIQ Observable Lookup is successfully with no data found for " + observable_value;
+        }
+
+        observable_data = observable_data.data[0];
+        var observable_sys_id = this.observable_snow_table_ingestion(observable_data);
+        var source_sys_ids = this.sources_ingestion(observable_data.sources);
+        if (observable_sys_id) {
+            this.m2m_source_observable_snow_table_ingestion(source_sys_ids, observable_sys_id);
+        }
+        return "EIQ Observable Lookup is successfully done for: " + observable_value;
     },
 
     type: 'DataIngestion'
@@ -154,13 +159,13 @@ DataIngestion.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-07-10 07:35:29</sys_created_on>
         <sys_id>1cc42bb72f33211055a656e62799b633</sys_id>
-        <sys_mod_count>31</sys_mod_count>
+        <sys_mod_count>32</sys_mod_count>
         <sys_name>DataIngestion</sys_name>
         <sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope>
         <sys_update_name>sys_script_include_1cc42bb72f33211055a656e62799b633</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-07-31 11:46:57</sys_updated_on>
+        <sys_updated_on>2023-08-16 11:28:00</sys_updated_on>
     </sys_script_include>
 </record_update>

@@ -31,9 +31,9 @@
         <onclick/>
         <order>100</order>
         <script><![CDATA[var data_ingestion_util = new x_1088979_eclectic.DataIngestion();
-data_ingestion_util.observable_ingestion(current.getValue("value"));
+var msg = data_ingestion_util.observable_ingestion(current.getValue("value"));
 action.setRedirectURL(current);
-gs.addInfoMessage("EIQ Observable Lookup is successfully done for: " + current.getValue("value"));
+gs.addInfoMessage(msg);
 ]]></script>
         <show_insert>false</show_insert>
         <show_multiple_update>false</show_multiple_update>
@@ -45,7 +45,7 @@ gs.addInfoMessage("EIQ Observable Lookup is successfully done for: " + current.g
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>3a0bdfea2f73211055a656e62799b68c</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>EIQ Observable Lookup</sys_name>
         <sys_overrides/>
         <sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
@@ -53,7 +53,7 @@ gs.addInfoMessage("EIQ Observable Lookup is successfully done for: " + current.g
         <sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope>
         <sys_update_name>sys_ui_action_3a0bdfea2f73211055a656e62799b68c</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-08-02 07:19:54</sys_updated_on>
+        <sys_updated_on>2023-08-16 11:28:09</sys_updated_on>
         <table>sn_ti_observable</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

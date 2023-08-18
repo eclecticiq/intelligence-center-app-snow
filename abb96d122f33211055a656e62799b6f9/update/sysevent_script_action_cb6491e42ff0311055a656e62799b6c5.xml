@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_script_action">
+    <sysevent_script_action action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition_script/>
+        <description/>
+        <event_name>x_1088979_eclectic.default.obs.type.mapp</event_name>
+        <name>UpdateDefaultObservableTypeMapping</name>
+        <order>100</order>
+        <script><![CDATA[var populate_util = new x_1088979_eclectic.EIQDefaultObservableMapping();
+populate_util.populate();
+gs.info("Default observable type mapping updated successfully");]]></script>
+        <synchronous>false</synchronous>
+        <sys_class_name>sysevent_script_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-18 10:32:21</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>cb6491e42ff0311055a656e62799b6c5</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>UpdateDefaultObservableTypeMapping</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope>
+        <sys_update_name>sysevent_script_action_cb6491e42ff0311055a656e62799b6c5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-18 11:01:27</sys_updated_on>
+    </sysevent_script_action>
+</record_update>
