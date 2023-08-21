@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_sec_core_integration_item_config">
     <sn_sec_core_integration_item_config action="INSERT_OR_UPDATE">
         <elem_type>string</elem_type>
-        <help_text>Please specify comma separated list of outgoing feed ids for observable fetching</help_text>
-        <integration display_value="EclecticIQ Intelligence Center">39843d1e2f33211055a656e62799b6d9</integration>
-        <label>Outgoing Feed IDs</label>
+        <help_text>Comma-separated list of EIC Outgoing feed IDs. This integration retrieves EIQ observables from these outgoing feeds daily. EIQ Observable lookup also uses these feeds.</help_text>
+        <integration display_value="EclecticIQ Intelligence Center Integration for Security Operations">39843d1e2f33211055a656e62799b6d9</integration>
+        <label>EIC Outgoing Feed IDs</label>
         <mandatory>false</mandatory>
         <name>feed_ids</name>
         <order>700</order>
@@ -13,14 +13,14 @@
         <sys_created_on>2023-07-27 11:17:38</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>bd3cc0692fd0311055a656e62799b682</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_name>feed_ids</sys_name>
-        <sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
+        <sys_package display_value="EclecticIQ Intelligence Center Integration for Security Operations" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
         <sys_policy/>
-        <sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope>
+        <sys_scope display_value="EclecticIQ Intelligence Center Integration for Security Operations">abb96d122f33211055a656e62799b6f9</sys_scope>
         <sys_update_name>sn_sec_core_integration_item_config_bd3cc0692fd0311055a656e62799b682</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-08-09 13:51:45</sys_updated_on>
+        <sys_updated_on>2023-08-21 11:11:02</sys_updated_on>
         <type/>
         <value>6</value>
     </sn_sec_core_integration_item_config>

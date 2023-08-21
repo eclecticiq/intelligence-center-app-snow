@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_sec_core_integration_item_config">
     <sn_sec_core_integration_item_config action="INSERT_OR_UPDATE">
         <elem_type>string</elem_type>
-        <help_text>Please Specify which version of API's are you using to connect with EclecticIQ</help_text>
-        <integration display_value="EclecticIQ Intelligence Center">39843d1e2f33211055a656e62799b6d9</integration>
-        <label>Version (v1/v2)</label>
+        <help_text>Enter EIC API version to use. EIC 3.0 and newer should use v2.</help_text>
+        <integration display_value="EclecticIQ Intelligence Center Integration for Security Operations">39843d1e2f33211055a656e62799b6d9</integration>
+        <label>API Version (v1/v2)</label>
         <mandatory>true</mandatory>
         <name>version</name>
         <order>300</order>
@@ -13,14 +13,14 @@
         <sys_created_on>2023-07-19 11:14:19</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>cc5ef2362f00311055a656e62799b60a</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>version</sys_name>
-        <sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
+        <sys_package display_value="EclecticIQ Intelligence Center Integration for Security Operations" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
         <sys_policy/>
-        <sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope>
+        <sys_scope display_value="EclecticIQ Intelligence Center Integration for Security Operations">abb96d122f33211055a656e62799b6f9</sys_scope>
         <sys_update_name>sn_sec_core_integration_item_config_cc5ef2362f00311055a656e62799b60a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-08-01 10:37:49</sys_updated_on>
+        <sys_updated_on>2023-08-21 11:07:45</sys_updated_on>
         <type/>
         <value>v1</value>
     </sn_sec_core_integration_item_config>

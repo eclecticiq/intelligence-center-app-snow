@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
     <sys_user_role action="INSERT_OR_UPDATE">
-        <assignable_by/>
+        <assignable_by display_value="x_1088979_eclectic.admin" name="x_1088979_eclectic.admin">e9b696932f90311055a656e62799b659</assignable_by>
         <can_delegate>true</can_delegate>
-        <description/>
+        <description>ServiceNow user can create, view, update, and delete feed_data_history_user records in the EclecticIQ Intelligence Center integration</description>
         <elevated_privilege>false</elevated_privilege>
         <encryption_context/>
         <grantable>true</grantable>
@@ -15,13 +15,13 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-07-28 06:16:19</sys_created_on>
         <sys_id>6a1154f52f10311055a656e62799b6d2</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>x_1088979_eclectic.feed_data_history_user</sys_name>
-        <sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
+        <sys_package display_value="EclecticIQ Intelligence Center Integration for Security Operations" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
         <sys_policy/>
-        <sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope>
+        <sys_scope display_value="EclecticIQ Intelligence Center Integration for Security Operations">abb96d122f33211055a656e62799b6f9</sys_scope>
         <sys_update_name>sys_user_role_6a1154f52f10311055a656e62799b6d2</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-07-28 06:16:19</sys_updated_on>
+        <sys_updated_on>2023-08-21 11:29:13</sys_updated_on>
     </sys_user_role>
 </record_update>
