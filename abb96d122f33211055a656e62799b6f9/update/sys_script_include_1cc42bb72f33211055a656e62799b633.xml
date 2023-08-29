@@ -29,7 +29,11 @@ DataIngestion.prototype = {
     get_platform_link: function(observable_type, observable_value) {
         var eiq_util = new x_1088979_eclectic.EIQConfigurationUtils();
         var config = eiq_util.getConfigurationByIntItemConfigId();
-        var value = config["base_url"]["value"] + "observables/" + observable_type + "/" + observable_value;
+		var host = config["base_url"]["value"];
+		if(!host.endsWith("/")){
+			host += "/";
+		}
+        var value = host + "observables/" + observable_type + "/" + observable_value;
         return encodeURIComponent(value);
     },
 
@@ -159,13 +163,13 @@ DataIngestion.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-07-10 07:35:29</sys_created_on>
         <sys_id>1cc42bb72f33211055a656e62799b633</sys_id>
-        <sys_mod_count>32</sys_mod_count>
+        <sys_mod_count>33</sys_mod_count>
         <sys_name>DataIngestion</sys_name>
-        <sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
+        <sys_package display_value="EclecticIQ Intelligence Center Integration for Security Operations" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
         <sys_policy>read</sys_policy>
-        <sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope>
+        <sys_scope display_value="EclecticIQ Intelligence Center Integration for Security Operations">abb96d122f33211055a656e62799b6f9</sys_scope>
         <sys_update_name>sys_script_include_1cc42bb72f33211055a656e62799b633</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-08-16 11:28:00</sys_updated_on>
+        <sys_updated_on>2023-08-29 07:18:45</sys_updated_on>
     </sys_script_include>
 </record_update>
