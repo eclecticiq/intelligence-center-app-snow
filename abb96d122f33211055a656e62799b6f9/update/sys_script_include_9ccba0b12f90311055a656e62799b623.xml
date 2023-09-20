@@ -20,7 +20,6 @@ ContentBlockIngestion.prototype = {
             return row_data[headers_dict[field]];
         }
         return "";
-
     },
 
     convert_str_to_datetime: function(value) {
@@ -34,6 +33,7 @@ ContentBlockIngestion.prototype = {
 
     save_observable_data: function(headers_dict, row_data) {
         var platform_url = this._get_field_value(headers_dict, row_data, "value_url");
+		gs.info("checking script " + platform_url);
         if (!platform_url.startsWith("http")) {
             return "";
         }
@@ -82,7 +82,6 @@ ContentBlockIngestion.prototype = {
         }
         instance.setValue("name", source_name);
         var src_relaibility = this._get_field_value(headers_dict, row_data, "meta.source_reliability");
-		gs.info("src " + src_relaibility);
         instance.setValue("reliability", src_relaibility);
         var source_sys_id = "";
         if (created) {
@@ -149,13 +148,13 @@ ContentBlockIngestion.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-07-28 08:17:40</sys_created_on>
         <sys_id>9ccba0b12f90311055a656e62799b623</sys_id>
-        <sys_mod_count>19</sys_mod_count>
+        <sys_mod_count>21</sys_mod_count>
         <sys_name>ContentBlockIngestion</sys_name>
-        <sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
+        <sys_package display_value="EclecticIQ Intelligence Center Integration for Security Operations" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
         <sys_policy>read</sys_policy>
-        <sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope>
+        <sys_scope display_value="EclecticIQ Intelligence Center Integration for Security Operations">abb96d122f33211055a656e62799b6f9</sys_scope>
         <sys_update_name>sys_script_include_9ccba0b12f90311055a656e62799b623</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-07-31 11:37:14</sys_updated_on>
+        <sys_updated_on>2023-09-15 11:24:12</sys_updated_on>
     </sys_script_include>
 </record_update>

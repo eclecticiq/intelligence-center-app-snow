@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="last_block_content_id" label="Last block content ID" language="en" table="x_1088979_eclectic_feed_data_history">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>last_block_content_id</element>
+            <help/>
+            <hint/>
+            <label>Last block content ID</label>
+            <language>en</language>
+            <name>x_1088979_eclectic_feed_data_history</name>
+            <plural>Last block content IDs</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-09-15 10:42:16</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Last block content ID</sys_name>
+            <sys_package display_value="EclecticIQ Intelligence Center Integration for Security Operations" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="EclecticIQ Intelligence Center Integration for Security Operations">abb96d122f33211055a656e62799b6f9</sys_scope>
+            <sys_update_name>sys_documentation_x_1088979_eclectic_feed_data_history_last_block_content_id_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-09-15 10:42:16</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

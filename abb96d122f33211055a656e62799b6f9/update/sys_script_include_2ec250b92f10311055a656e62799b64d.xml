@@ -32,18 +32,26 @@ OutgoingFeedUtil.prototype = {
 	},
 	
 	create_content_data_events: function(feed_id, new_content_blocks, config){
+		gs.info("Toal content block found for feed id #" + feed_id + " are : " + new_content_blocks.length);
 		var instance = this.get_content_blocks_instance(feed_id, config);
-		var content_block = instance.getValue("content_blocks") || "";
-		var ingested_cb = content_block.toString().split(",");
+		var last_content_block_id = instance.getValue("last_content_block_id") || 0;
+		var max_content_block_id = last_content_block_id;
+		
 		for(var cnt=0;cnt<new_content_blocks.length;cnt++){
 			var curr_block = new_content_blocks[cnt];
-			if(ingested_cb.indexOf(curr_block)>=0){
+			var content_id = curr_block.split("content-blocks/")[1];
+			content_id = Number(content_id);
+			gs.info("cccc" + content_id);
+			if(content_id < last_content_block_id){
 				continue;
 			}
-			ingested_cb.push(curr_block);
+			if(max_content_block_id<content_id){
+				max_content_block_id=content_id;
+			}
 			gs.eventQueue("x_1088979_eclectic.feed.ingestion", instance, curr_block);
 		}
-		instance.setValue("content_blocks", ingested_cb.join(","));
+		gs.info("max value" + max_content_block_id);
+		instance.setValue("last_content_block_id", max_content_block_id);
 		instance.update();
 	},
 	
@@ -65,7 +73,12 @@ OutgoingFeedUtil.prototype = {
 		}
 		feed_ids = feed_ids.split(",");
 		for(var cnt=0;cnt<feed_ids.length;cnt++){
-			this.get_outgoing_feed_content(feed_ids[cnt], config);
+			try{
+				this.get_outgoing_feed_content(feed_ids[cnt], config);
+			}catch(ex){
+				gs.error("Issue with Outgoing feed having id: " + feed_ids[cnt]);
+			}
+			
 		}
 	},
 	
@@ -76,13 +89,13 @@ OutgoingFeedUtil.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-07-28 07:23:45</sys_created_on>
         <sys_id>2ec250b92f10311055a656e62799b64d</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>OutgoingFeedUtil</sys_name>
-        <sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
+        <sys_package display_value="EclecticIQ Intelligence Center Integration for Security Operations" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
         <sys_policy>read</sys_policy>
-        <sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope>
+        <sys_scope display_value="EclecticIQ Intelligence Center Integration for Security Operations">abb96d122f33211055a656e62799b6f9</sys_scope>
         <sys_update_name>sys_script_include_2ec250b92f10311055a656e62799b64d</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-07-28 09:17:14</sys_updated_on>
+        <sys_updated_on>2023-09-15 11:26:56</sys_updated_on>
     </sys_script_include>
 </record_update>
