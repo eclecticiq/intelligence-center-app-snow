@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="ce6f4cb52f10311055a656e62799b6f5" label="Feed Data History" max_length="40" name="x_1088979_eclectic_feed_data_history" type="collection">
         <element default="0" label="Last block content ID" max_length="40" name="last_block_content_id" type="integer"/>
-        <element display="true" label="Outgoing feed URL" max_length="150" name="outgoing_feed_url" type="url" unique="true"/>
+        <element display="true" label="Outgoing feed URL" mandatory="true" max_length="150" name="outgoing_feed_url" type="url" unique="true"/>
         <index name="index" unique="true">
             <element name="outgoing_feed_url"/>
         </index>

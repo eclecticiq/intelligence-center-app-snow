@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="bcf7ca922fb3211055a656e62799b638" label="EIQ Source" max_length="40" name="x_1088979_eclectic_eiq_source" type="collection">
-        <element display="true" label="name" max_length="250" name="name" type="string_full_utf8"/>
+        <element display="true" label="name" mandatory="true" max_length="250" name="name" type="string_full_utf8"/>
         <element label="reliability" max_length="5" name="reliability" type="string"/>
-        <element label="Source ID" max_length="36" name="source_id" type="string" unique="true"/>
+        <element label="Source ID" mandatory="true" max_length="36" name="source_id" type="string" unique="true"/>
         <index name="index" unique="true">
             <element name="source_id"/>
         </index>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="451942d22fb3211055a656e62799b637" label="EIQ M2M Observable Source" max_length="40" name="x_1088979_eclectic_m2m_x_1088979_ec_x_1088979_ec" type="collection">
-        <element attributes="encode_utf8=false" label="EIQ Observables" max_length="32" name="x_1088979_eclectic_eiq_observable" reference="x_1088979_eclectic_eiq_observable" type="reference"/>
-        <element attributes="encode_utf8=false" label="EIQ Sources" max_length="32" name="x_1088979_eclectic_eiq_source" reference="x_1088979_eclectic_eiq_source" type="reference"/>
+        <element attributes="encode_utf8=false" label="EIQ Observables" mandatory="true" max_length="32" name="x_1088979_eclectic_eiq_observable" reference="x_1088979_eclectic_eiq_observable" type="reference"/>
+        <element attributes="encode_utf8=false" label="EIQ Sources" mandatory="true" max_length="32" name="x_1088979_eclectic_eiq_source" reference="x_1088979_eclectic_eiq_source" type="reference"/>
         <index name="index">
             <element name="x_1088979_eclectic_eiq_source"/>
         </index>

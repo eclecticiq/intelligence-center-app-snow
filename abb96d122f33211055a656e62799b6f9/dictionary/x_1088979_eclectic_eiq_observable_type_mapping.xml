@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="0762249c2fb0311055a656e62799b670" label="EIQ Observable Type Mapping" max_length="40" name="x_1088979_eclectic_eiq_observable_type_mapping" type="collection">
-        <element choice="3" default="ipv4" label="EIQ Observable Type" max_length="40" name="eiq_observable_type" type="choice">
+        <element choice="3" default="ipv4" label="EIQ Observable Type" mandatory="true" max_length="40" name="eiq_observable_type" type="choice">
             <choice>
                 <element inactive_on_update="false" label="actor-id" value="actor-id"/>
                 <element inactive_on_update="false" label="address" value="address"/>
@@ -81,7 +81,7 @@
                 <element inactive_on_update="false" label="yara" value="yara"/>
             </choice>
         </element>
-        <element display="true" label="TI Observable Type" max_length="32" name="ti_observable_type" primary="true" reference="sn_ti_observable_type" type="reference" unique="true"/>
+        <element display="true" label="TI Observable Type" mandatory="true" max_length="32" name="ti_observable_type" primary="true" reference="sn_ti_observable_type" type="reference" unique="true"/>
         <index name="index" unique="true">
             <element name="ti_observable_type"/>
         </index>

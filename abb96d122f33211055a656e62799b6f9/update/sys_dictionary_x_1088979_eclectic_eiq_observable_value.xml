@@ -33,7 +33,7 @@
         <function_definition/>
         <function_field>false</function_field>
         <internal_type display_value="String">string</internal_type>
-        <mandatory>false</mandatory>
+        <mandatory>true</mandatory>
         <max_length>300</max_length>
         <name>x_1088979_eclectic_eiq_observable</name>
         <next_element/>
@@ -58,7 +58,7 @@
         <sys_scope display_value="EclecticIQ Intelligence Center Integration for Security Operations">abb96d122f33211055a656e62799b6f9</sys_scope>
         <sys_update_name>sys_dictionary_x_1088979_eclectic_eiq_observable_value</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-08-29 08:13:21</sys_updated_on>
+        <sys_updated_on>2023-09-28 14:28:00</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>true</unique>
