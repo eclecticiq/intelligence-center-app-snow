@@ -32,17 +32,16 @@ OutgoingFeedUtil.prototype = {
 	},
 	
 	create_content_data_events: function(feed_id, new_content_blocks, config){
-		gs.info("Toal content block found for feed id #" + feed_id + " are : " + new_content_blocks.length);
+		gs.info("Total content block found for feed id #" + feed_id + " are : " + new_content_blocks.length);
 		var instance = this.get_content_blocks_instance(feed_id, config);
-		var last_content_block_id = instance.getValue("last_content_block_id") || 0;
+		var last_content_block_id = instance.getValue("last_block_content_id") || 0;
 		var max_content_block_id = last_content_block_id;
 		
 		for(var cnt=0;cnt<new_content_blocks.length;cnt++){
 			var curr_block = new_content_blocks[cnt];
 			var content_id = curr_block.split("content-blocks/")[1];
 			content_id = Number(content_id);
-			gs.info("cccc" + content_id);
-			if(content_id < last_content_block_id){
+			if(content_id <= last_content_block_id){
 				continue;
 			}
 			if(max_content_block_id<content_id){
@@ -50,8 +49,7 @@ OutgoingFeedUtil.prototype = {
 			}
 			gs.eventQueue("x_1088979_eclectic.feed.ingestion", instance, curr_block);
 		}
-		gs.info("max value" + max_content_block_id);
-		instance.setValue("last_content_block_id", max_content_block_id);
+		instance.setValue("last_block_content_id", max_content_block_id);
 		instance.update();
 	},
 	
@@ -89,13 +87,13 @@ OutgoingFeedUtil.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-07-28 07:23:45</sys_created_on>
         <sys_id>2ec250b92f10311055a656e62799b64d</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name>OutgoingFeedUtil</sys_name>
         <sys_package display_value="EclecticIQ Intelligence Center Integration for Security Operations" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="EclecticIQ Intelligence Center Integration for Security Operations">abb96d122f33211055a656e62799b6f9</sys_scope>
         <sys_update_name>sys_script_include_2ec250b92f10311055a656e62799b64d</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-09-15 11:26:56</sys_updated_on>
+        <sys_updated_on>2023-10-27 09:40:19</sys_updated_on>
     </sys_script_include>
 </record_update>
