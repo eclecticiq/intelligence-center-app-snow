@@ -46,9 +46,9 @@ AllObservableIngestion.prototype = {
         <sys_id>0a9257b42f00311055a656e62799b658</sys_id>
         <sys_mod_count>13</sys_mod_count>
         <sys_name>AllObservableIngestion</sys_name>
-        <sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
+        <sys_package display_value="EclecticIQ Intelligence Center Integration for Security Operations" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
         <sys_policy>read</sys_policy>
-        <sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope>
+        <sys_scope display_value="EclecticIQ Intelligence Center Integration for Security Operations">abb96d122f33211055a656e62799b6f9</sys_scope>
         <sys_update_name>sys_script_include_0a9257b42f00311055a656e62799b658</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-07-14 07:11:59</sys_updated_on>

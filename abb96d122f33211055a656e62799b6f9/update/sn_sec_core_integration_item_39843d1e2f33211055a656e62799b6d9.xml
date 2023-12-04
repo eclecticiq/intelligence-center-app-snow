@@ -5,13 +5,13 @@
         <categories>900e912b53221200158b7cbe1ec5877e</categories>
         <configurable>true</configurable>
         <create_child_integration_item>false</create_child_integration_item>
-        <description>To utilize the EclecticIQ Intelligence Center integration, you must be an EclecticIQ customer and provide a valid API Token for authentication. Login to the Intelligence Center dashboard and obtain the API Token under Account section. Configuring this integration will activate workflows.</description>
+        <description>To utilize the EclecticIQ Intelligence Center Integration for Security Operations, you must be an EclecticIQ customer and provide a valid API Token for authentication. Login to the Intelligence Center dashboard and obtain the API Token under the Account section. Configuring this integration will activate workflows.</description>
         <external_link/>
         <help_link>https://www.eclecticiq.com/platform</help_link>
         <install_script/>
         <installed>false</installed>
         <max_child_integration_item/>
-        <name>EclecticIQ Intelligence Center</name>
+        <name>EclecticIQ Intelligence Center Integration for Security Operations</name>
         <order>100</order>
         <parent/>
         <plugin_id>com.snc.threat</plugin_id>
@@ -21,91 +21,30 @@
         <sys_created_on>2023-07-05 06:53:49</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>39843d1e2f33211055a656e62799b6d9</sys_id>
-        <sys_mod_count>31</sys_mod_count>
-        <sys_name>EclecticIQ Intelligence Center</sys_name>
-        <sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
+        <sys_mod_count>35</sys_mod_count>
+        <sys_name>EclecticIQ Intelligence Center Integration for Security Operations</sys_name>
+        <sys_package display_value="EclecticIQ Intelligence Center Integration for Security Operations" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
         <sys_policy/>
-        <sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope>
+        <sys_scope display_value="EclecticIQ Intelligence Center Integration for Security Operations">abb96d122f33211055a656e62799b6f9</sys_scope>
         <sys_update_name>sn_sec_core_integration_item_39843d1e2f33211055a656e62799b6d9</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-07-20 13:11:02</sys_updated_on>
+        <sys_updated_on>2023-08-21 08:54:42</sys_updated_on>
         <validation_script><![CDATA[validate(sysId, values);
 
 function validate(sysId, values) {
     //Set the value of "result" variable to non empty string if validation fails
     result = validateAllStatus(sysId, values);
+	if(result==""){
+		gs.addInfoMessage("Account configuration is successfully saved");
+	}
+	
     return result;
 }
 
-function validateAllStatus(sysId, values){
-	var eiq_util = new x_1088979_eclectic.EIQConfigurationUtils();
-    var configs = eiq_util.getConfigurationByIntItemConfigId(sysId);
-	var msg = validateFields(configs, values);
-	if (msg == ""){
-		try{
-			msg = validateStatus(configs, values);
-		}
-		catch(ex){
-			var message = ex.message;
-            gs.error(ex.message);
-            msg = "Internal Issue. Please contact the administrator";
-		}
-		
-	}
-	return msg;
-}
-
-
-function validateFields(configs, values){
-	var msg = validate_observable_last_checkout_value(configs, values);
-	if (msg == ""){
-		msg = validate_version_value(configs, values);
-	}
-	return msg;
-}
-
-function validate_observable_last_checkout_value(configs, values){
-	var last_checkout = values[configs.observable_last_checkout.sys_id];
-	var limit_time = new GlideDateTime();
-	limit_time.addDaysLocalTime(-30);
-	if(last_checkout<limit_time){
-		return "Invalid Observable Last Checkout Date. Please enter it within a month";
-	}
-	return "";
-}
-
-function validate_version_value(configs, values){
-	var version = values[configs.version.sys_id];
-	if((version != "v1") && (version != "v2")){
-		return "Invalid version, Please enter either v1 or v2";
-	}
-	return "";
-}
-
-
-function validateStatus(configs, values) {
-	var api_token = values[configs.api_token.sys_id];
-    var encoded_api_token = encodeURIComponent(api_token);
-	
-    var request = new sn_ws.RESTMessageV2('x_1088979_eclectic.List of Sources', 'List of Sources');
-	request.setStringParameterNoEscape('version', values[configs.version.sys_id]);
-    request.setStringParameterNoEscape('offset', 0);
-    request.setStringParameterNoEscape('limit', 1);
-    request.setStringParameterNoEscape('base_url', values[configs.base_url.sys_id]);
-    request.setRequestHeader("Authorization", "Bearer " + encoded_api_token);
-    var response = request.execute();
-    var errorMessage = '';
-    if (response.getStatusCode() == 401) {
-        errorMessage = 'Method failed with code: 401 - Invalid API Token';
-    } else if (response.getStatusCode() != 200) {
-        error = response.getErrorMessage();
-        errorMessage = "Some Internal error with Status code: " + response.getStatusCode();
-        if (error.includes("UnknownHostException")) {
-            errorMessage = "Method failed with Invalid Base URL";
-        }
-        gs.error(response.getErrorMessage());
-    }
-    return errorMessage;
+function validateAllStatus(sysId, values) {
+    var config_util = new x_1088979_eclectic.ConfigurationValidation();
+    var response = config_util.validate_all(sysId, values);
+	return response;
 }]]></validation_script>
     </sn_sec_core_integration_item>
     <sys_attachment action="INSERT_OR_UPDATE">

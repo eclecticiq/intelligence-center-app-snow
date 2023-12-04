@@ -297,9 +297,9 @@ EIQAPIcalls.prototype = {
         <sys_id>3a9d054f2f37211055a656e62799b6fa</sys_id>
         <sys_mod_count>62</sys_mod_count>
         <sys_name>EIQAPIcalls</sys_name>
-        <sys_package display_value="EclecticIQ Intelligence Center" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
+        <sys_package display_value="EclecticIQ Intelligence Center Integration for Security Operations" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
         <sys_policy>read</sys_policy>
-        <sys_scope display_value="EclecticIQ Intelligence Center">abb96d122f33211055a656e62799b6f9</sys_scope>
+        <sys_scope display_value="EclecticIQ Intelligence Center Integration for Security Operations">abb96d122f33211055a656e62799b6f9</sys_scope>
         <sys_update_name>sys_script_include_3a9d054f2f37211055a656e62799b6fa</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-08-07 12:28:01</sys_updated_on>

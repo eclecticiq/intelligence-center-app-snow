@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition><![CDATA[gs.hasRole("x_1088979_eclectic.action");]]></condition>
+        <conditional>true</conditional>
+        <entered_time>1970-01-01 00:00:00</entered_time>
+        <name>Download Outgoing Feed Data </name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2023-07-28 05:55:06</run_start>
+        <run_time>1969-12-31 23:00:00</run_time>
+        <run_type>daily</run_type>
+        <script><![CDATA[gs.info("Automatic Outgoing Feed downloading is started");
+var feed_util = new x_1088979_eclectic.OutgoingFeedUtil();
+feed_util.get_outgoing_feeds_content();
+gs.info("Automatic Outgoing Feed downloading is completed");
+]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-28 05:57:09</sys_created_on>
+        <sys_id>3f3c44712f10311055a656e62799b6a6</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Download Outgoing Feed Data </sys_name>
+        <sys_package display_value="EclecticIQ Intelligence Center Integration for Security Operations" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="EclecticIQ Intelligence Center Integration for Security Operations">abb96d122f33211055a656e62799b6f9</sys_scope>
+        <sys_update_name>sysauto_script_3f3c44712f10311055a656e62799b6a6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-13 12:14:56</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>
