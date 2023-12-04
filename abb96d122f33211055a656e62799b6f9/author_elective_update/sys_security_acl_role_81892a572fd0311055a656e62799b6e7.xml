@@ -42,7 +42,7 @@
         <update_guid_history>4d892a57e6d03110f94bf22cb3c2a7e8:-535406603</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="x_1088979_eclectic_abc.x_1088979_eclectic.admin">63ca6e972fd0311055a656e62799b60f</sys_audit_delete>
+        <sys_audit_delete display_value="">63ca6e972fd0311055a656e62799b60f</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-08-02 09:18:44</sys_created_on>

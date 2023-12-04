@@ -65,7 +65,7 @@
         <update_guid_history>965aa9d27133211004c895b5aef21c43:-572306443</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Observable">dc9bed162f33211055a656e62799b65b</sys_audit_delete>
+        <sys_audit_delete display_value="">dc9bed162f33211055a656e62799b65b</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-07-05 05:37:07</sys_created_on>

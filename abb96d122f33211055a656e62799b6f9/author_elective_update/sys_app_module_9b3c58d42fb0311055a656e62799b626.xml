@@ -65,7 +65,7 @@
         <update_guid_history>3e9c101892b03110468d122c69e7b1cb:-1462183118,d33c58d42db031105f267a4660080429:-1214215168</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="EIQ Mapings">8462a09c2fb0311055a656e62799b6c5</sys_audit_delete>
+        <sys_audit_delete display_value="">8462a09c2fb0311055a656e62799b6c5</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-08-17 12:12:17</sys_created_on>

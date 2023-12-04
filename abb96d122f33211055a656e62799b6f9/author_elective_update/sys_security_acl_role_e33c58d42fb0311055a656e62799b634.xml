@@ -42,7 +42,7 @@
         <update_guid_history>e73c58d4c7b03110c131c20a9f3d1a36:-503409460</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="x_1088979_eclectic_maps.x_1088979_eclectic.maps_user">3352a09c2fb0311055a656e62799b694</sys_audit_delete>
+        <sys_audit_delete display_value="">3352a09c2fb0311055a656e62799b694</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-08-17 12:12:16</sys_created_on>

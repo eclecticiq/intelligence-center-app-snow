@@ -65,7 +65,7 @@
         <update_guid_history>edb98e160db3211044caa48c7a0b6dd7:-436521880,565aa9d2993321105e84e0084141b245:-442944856</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="EclecticIQ">470ac6562fb3211055a656e62799b6a4</sys_audit_delete>
+        <sys_audit_delete display_value="">470ac6562fb3211055a656e62799b6a4</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-07-05 07:50:18</sys_created_on>

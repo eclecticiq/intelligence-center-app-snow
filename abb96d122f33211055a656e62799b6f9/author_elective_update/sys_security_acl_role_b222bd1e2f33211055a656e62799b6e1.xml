@@ -42,7 +42,7 @@
         <update_guid_history>93d0625f079031106bf03b54eef52f8a:235510906,7e22bd1e3b332110704d0e34f7f6b3e2:-1584118577</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="x_1088979_eclectic_eiq_observable.x_1088979_eclectic.admin">86416a5f2f90311055a656e62799b6ac</sys_audit_delete>
+        <sys_audit_delete display_value="">86416a5f2f90311055a656e62799b6ac</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-08-02 08:37:08</sys_created_on>

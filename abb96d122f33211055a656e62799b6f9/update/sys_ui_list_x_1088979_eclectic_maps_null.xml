@@ -1,46 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_1088979_eclectic_eiq_source" version="2" view="sys_ref_list">
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_1088979_eclectic_maps" version="2" view="">
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>name</element>
-            <list_id display_value="x_1088979_eclectic_eiq_source" element="NULL" name="x_1088979_eclectic_eiq_source" parent="NULL" relationship="NULL" sys_domain="global" view="e384f0717d31311076daf29f52070d7d">96b4c1db2fa0311055a656e62799b664</list_id>
+            <element>sys_created_on</element>
+            <list_id display_value="x_1088979_eclectic_maps" element="NULL" name="x_1088979_eclectic_maps" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">586cd4102fb0311055a656e62799b6d6</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-08-14 12:08:26</sys_created_on>
-            <sys_id>eeb44d5f2fa0311055a656e62799b621</sys_id>
+            <sys_created_on>2023-08-17 11:46:05</sys_created_on>
+            <sys_id>d06cd4102fb0311055a656e62799b6d8</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-08-14 12:08:26</sys_updated_on>
+            <sys_updated_on>2023-08-17 11:46:05</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element/>
             <max_value>false</max_value>
             <min_value>false</min_value>
-            <name>x_1088979_eclectic_eiq_source</name>
+            <name>x_1088979_eclectic_maps</name>
             <parent/>
             <position/>
             <relationship/>
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-08-14 12:08:26</sys_created_on>
+            <sys_created_on>2023-08-17 11:46:05</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>96b4c1db2fa0311055a656e62799b664</sys_id>
+            <sys_id>586cd4102fb0311055a656e62799b6d6</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_name>x_1088979_eclectic_eiq_source</sys_name>
+            <sys_name>x_1088979_eclectic_maps</sys_name>
             <sys_package display_value="EclecticIQ Intelligence Center Integration for Security Operations" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
             <sys_policy/>
             <sys_scope display_value="EclecticIQ Intelligence Center Integration for Security Operations">abb96d122f33211055a656e62799b6f9</sys_scope>
-            <sys_update_name>sys_ui_list_x_1088979_eclectic_eiq_source_sys_ref_list</sys_update_name>
+            <sys_update_name>sys_ui_list_x_1088979_eclectic_maps_null</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-08-14 12:08:26</sys_updated_on>
+            <sys_updated_on>2023-08-17 11:46:05</sys_updated_on>
             <sys_user/>
-            <view display_value="Reference List" name="sys_ref_list">e384f0717d31311076daf29f52070d7d</view>
+            <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>
         </sys_ui_list>
     </sys_ui_list>
