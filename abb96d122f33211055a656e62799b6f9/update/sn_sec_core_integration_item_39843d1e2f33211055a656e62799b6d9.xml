@@ -21,14 +21,14 @@
         <sys_created_on>2023-07-05 06:53:49</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>39843d1e2f33211055a656e62799b6d9</sys_id>
-        <sys_mod_count>35</sys_mod_count>
+        <sys_mod_count>36</sys_mod_count>
         <sys_name>EclecticIQ Intelligence Center Integration for Security Operations</sys_name>
-        <sys_package display_value="EclecticIQ Intelligence Center Integration for Security Operations" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
+        <sys_package display_value="EclecticIQ Int" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
         <sys_policy/>
-        <sys_scope display_value="EclecticIQ Intelligence Center Integration for Security Operations">abb96d122f33211055a656e62799b6f9</sys_scope>
+        <sys_scope display_value="EclecticIQ Int">abb96d122f33211055a656e62799b6f9</sys_scope>
         <sys_update_name>sn_sec_core_integration_item_39843d1e2f33211055a656e62799b6d9</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-08-21 08:54:42</sys_updated_on>
+        <sys_updated_on>2024-01-17 14:13:55</sys_updated_on>
         <validation_script><![CDATA[validate(sysId, values);
 
 function validate(sysId, values) {
@@ -42,7 +42,7 @@ function validate(sysId, values) {
 }
 
 function validateAllStatus(sysId, values) {
-    var config_util = new x_1088979_eclectic.ConfigurationValidation();
+    var config_util = new x_eiqbv_eclecticiq.ConfigurationValidation();
     var response = config_util.validate_all(sysId, values);
 	return response;
 }]]></validation_script>

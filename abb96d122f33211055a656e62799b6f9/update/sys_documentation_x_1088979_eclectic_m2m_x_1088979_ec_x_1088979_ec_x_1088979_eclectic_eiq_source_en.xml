@@ -13,9 +13,9 @@
             <sys_created_on>2023-07-05 07:46:05</sys_created_on>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>EIQ Sources</sys_name>
-            <sys_package display_value="EclecticIQ Intelligence Center Integration for Security Operations" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
+            <sys_package display_value="EclecticIQ Int" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
             <sys_policy/>
-            <sys_scope display_value="EclecticIQ Intelligence Center Integration for Security Operations">abb96d122f33211055a656e62799b6f9</sys_scope>
+            <sys_scope display_value="EclecticIQ Int">abb96d122f33211055a656e62799b6f9</sys_scope>
             <sys_update_name>sys_documentation_x_1088979_eclectic_m2m_x_1088979_ec_x_1088979_ec_x_1088979_eclectic_eiq_source_en</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2023-07-05 07:46:05</sys_updated_on>

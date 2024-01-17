@@ -36,7 +36,7 @@
     </sys_db_object>
     <sys_update_version action="INSERT_OR_UPDATE">
         <action>DELETE</action>
-        <application display_value="EclecticIQ Intelligence Center Integration for Security Operations">abb96d122f33211055a656e62799b6f9</application>
+        <application display_value="EclecticIQ Int">abb96d122f33211055a656e62799b6f9</application>
         <file_path/>
         <instance_id>a06f34c9dbddf3c052cec5970596196a</instance_id>
         <instance_name>dev85531</instance_name>
@@ -69,10 +69,10 @@
         <sys_metadata>b60c94d42fb0311055a656e62799b64a</sys_metadata>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>EIQ Maping</sys_name>
-        <sys_package display_value="EclecticIQ Intelligence Center Integration for Security Operations" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
+        <sys_package display_value="EclecticIQ Int" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
         <sys_parent/>
         <sys_policy/>
-        <sys_scope display_value="EclecticIQ Intelligence Center Integration for Security Operations">abb96d122f33211055a656e62799b6f9</sys_scope>
+        <sys_scope display_value="EclecticIQ Int">abb96d122f33211055a656e62799b6f9</sys_scope>
         <sys_scope_delete display_value="">02e8eabc72004d848186e315fd123390</sys_scope_delete>
         <sys_update_name>sys_db_object_b60c94d42fb0311055a656e62799b64a</sys_update_name>
         <sys_update_version display_value="sys_db_object_b60c94d42fb0311055a656e62799b64a">fe9c10182fb0311055a656e62799b6c8</sys_update_version>

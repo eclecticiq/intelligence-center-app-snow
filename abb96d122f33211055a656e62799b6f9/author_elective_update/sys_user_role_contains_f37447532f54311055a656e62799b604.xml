@@ -17,7 +17,7 @@
     </sys_user_role_contains>
 <sys_update_version action="INSERT_OR_UPDATE">
         <action>DELETE</action>
-        <application display_value="EclecticIQ Intelligence Center Integration for Security Operations">abb96d122f33211055a656e62799b6f9</application>
+        <application display_value="EclecticIQ Int">abb96d122f33211055a656e62799b6f9</application>
         <file_path/>
         <instance_id>5c5b8286dbf67990ae4c9027c596196f</instance_id>
         <instance_name>ven06890</instance_name>
@@ -67,10 +67,10 @@
         <sys_metadata>f37447532f54311055a656e62799b604</sys_metadata>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>sn_ti.read.x_1088979_eclectic.action</sys_name>
-        <sys_package display_value="EclecticIQ Intelligence Center Integration for Security Operations" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
+        <sys_package display_value="EclecticIQ Int" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
         <sys_parent/>
         <sys_policy/>
-        <sys_scope display_value="EclecticIQ Intelligence Center Integration for Security Operations">abb96d122f33211055a656e62799b6f9</sys_scope>
+        <sys_scope display_value="EclecticIQ Int">abb96d122f33211055a656e62799b6f9</sys_scope>
         <sys_scope_delete display_value="">02e8eabc72004d848186e315fd123390</sys_scope_delete>
         <sys_update_name>sys_user_role_contains_f37447532f54311055a656e62799b604</sys_update_name>
         <sys_update_version display_value="sys_user_role_contains_f37447532f54311055a656e62799b604">60e06150938739106e69fe4b1bba103c</sys_update_version>
