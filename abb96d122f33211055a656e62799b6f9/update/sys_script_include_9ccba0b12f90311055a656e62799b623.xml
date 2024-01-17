@@ -45,17 +45,21 @@ ContentBlockIngestion.prototype = {
 		var diff_value = this._get_field_value(headers_dict, row_data, "diff");
 
         var instance = new GlideRecord(this.OBSERVABLE_TABLE);
-        var created = instance.get("value", observable_value);
-		if (created && diff_value=="del"){
-			instance.deleteRecord();
-			return "";
+		if (instance.get("value", observable_value)){
+			if(diff_value=="del"){
+				instance.deleteRecord();
+				return "";
+			}
 		}
-		
-        if (!created) {
-            instance.initialize();
+		else{
+			if(diff_value=="del"){
+				return "";
+			}
+			instance.initialize();
             instance.setValue("value", observable_value);
+			
+		}
 
-        }
         instance.setValue("type", this._get_field_value(headers_dict, row_data, "type"));
         instance.setValue("platform_link", encodeURIComponent(platform_url));
         instance.setValue("maliciousness", this._get_field_value(headers_dict, row_data, "meta.confidence"));
@@ -82,8 +86,7 @@ ContentBlockIngestion.prototype = {
         }
 
 
-        var created = instance.get("source_id", source_id);
-        if (!created) {
+        if (!instance.get("source_id", source_id)) {
             instance.initialize();
             instance.setValue("source_id", source_id);
         }
@@ -155,13 +158,13 @@ ContentBlockIngestion.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-07-28 08:17:40</sys_created_on>
         <sys_id>9ccba0b12f90311055a656e62799b623</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>23</sys_mod_count>
         <sys_name>ContentBlockIngestion</sys_name>
         <sys_package display_value="EclecticIQ Intelligence Center Integration for Security Operations" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="EclecticIQ Intelligence Center Integration for Security Operations">abb96d122f33211055a656e62799b6f9</sys_scope>
         <sys_update_name>sys_script_include_9ccba0b12f90311055a656e62799b623</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-10-27 09:03:35</sys_updated_on>
+        <sys_updated_on>2023-12-14 07:14:55</sys_updated_on>
     </sys_script_include>
 </record_update>

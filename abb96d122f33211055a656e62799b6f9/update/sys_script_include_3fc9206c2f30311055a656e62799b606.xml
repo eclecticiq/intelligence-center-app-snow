@@ -58,8 +58,8 @@ EIQDefaultObservableMapping.prototype = {
 	
 	create_or_update_mapping: function(ti_obs_type_sysid, eiq_type){
 		var instance = new GlideRecord(this.EIQ_OBSERVABLE_TYPE_MAPPING_TABLE);
-		var created = instance.get("ti_observable_type", ti_obs_type_sysid);
-		if(!created){
+		// var created = instance.get("ti_observable_type", ti_obs_type_sysid);
+		if(!instance.get("ti_observable_type", ti_obs_type_sysid)){
 			instance.initialize();
 			instance.setValue("ti_observable_type", ti_obs_type_sysid);
 			instance.setValue("eiq_observable_type", eiq_type);
@@ -88,13 +88,13 @@ EIQDefaultObservableMapping.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-08-18 07:58:31</sys_created_on>
         <sys_id>3fc9206c2f30311055a656e62799b606</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>EIQDefaultObservableMapping</sys_name>
         <sys_package display_value="EclecticIQ Intelligence Center Integration for Security Operations" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="EclecticIQ Intelligence Center Integration for Security Operations">abb96d122f33211055a656e62799b6f9</sys_scope>
         <sys_update_name>sys_script_include_3fc9206c2f30311055a656e62799b606</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-08-18 11:06:48</sys_updated_on>
+        <sys_updated_on>2023-12-14 07:00:57</sys_updated_on>
     </sys_script_include>
 </record_update>

@@ -107,14 +107,12 @@ SnowToEIQIngestionUtil.prototype = {
 
     validateExtractType: function(type_id) {
 		var map_instance = new GlideRecord(this.EIQ_OBSERVABLE_TYPE_MAPPING_TABLE);
-		var created = map_instance.get("ti_observable_type", type_id);
-		if(created){
+		if(map_instance.get("ti_observable_type", type_id)){
 			return map_instance.getValue("eiq_observable_type");
 		}
 		
         var instance = new GlideRecord("sn_ti_observable_type");
-        var find = instance.get(type_id);
-        if (!find) {
+        if (!instance.get(type_id)) {
             return "";
         }
         var value = instance.getValue("value").toLowerCase();
@@ -240,13 +238,13 @@ SnowToEIQIngestionUtil.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-07-20 10:05:02</sys_created_on>
         <sys_id>a3a27fc32fc0311055a656e62799b66e</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>21</sys_mod_count>
         <sys_name>SnowToEIQIngestionUtil</sys_name>
         <sys_package display_value="EclecticIQ Intelligence Center Integration for Security Operations" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="EclecticIQ Intelligence Center Integration for Security Operations">abb96d122f33211055a656e62799b6f9</sys_scope>
         <sys_update_name>sys_script_include_a3a27fc32fc0311055a656e62799b66e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-12-04 11:29:21</sys_updated_on>
+        <sys_updated_on>2023-12-14 07:19:53</sys_updated_on>
     </sys_script_include>
 </record_update>

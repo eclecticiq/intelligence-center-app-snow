@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role_contains">
+    <sys_user_role_contains action="DELETE">
+        <contains display_value="sn_ti.read" name="sn_ti.read">231065f19f01120035c6786f957fcf08</contains>
+        <role display_value="x_1088979_eclectic.action" name="x_1088979_eclectic.action">865f8edb2f50311055a656e62799b6aa</role>
+        <sys_class_name>sys_user_role_contains</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-02 11:10:59</sys_created_on>
+        <sys_id>f37447532f54311055a656e62799b604</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sn_ti.read.x_1088979_eclectic.action</sys_name>
+        <sys_package display_value="EclecticIQ Intelligence Center Integration for Security Operations" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="EclecticIQ Intelligence Center Integration for Security Operations">abb96d122f33211055a656e62799b6f9</sys_scope>
+        <sys_update_name>sys_user_role_contains_f37447532f54311055a656e62799b604</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-02 11:10:59</sys_updated_on>
+    </sys_user_role_contains>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="EclecticIQ Intelligence Center Integration for Security Operations">abb96d122f33211055a656e62799b6f9</application>
+        <file_path/>
+        <instance_id>5c5b8286dbf67990ae4c9027c596196f</instance_id>
+        <instance_name>ven06890</instance_name>
+        <name>sys_user_role_contains_f37447532f54311055a656e62799b604</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role_contains">
+    <sys_user_role_contains action="INSERT_OR_UPDATE">
+        <contains display_value="sn_ti.read" name="sn_ti.read">231065f19f01120035c6786f957fcf08</contains>
+        <role display_value="x_1088979_eclectic.action" name="x_1088979_eclectic.action">865f8edb2f50311055a656e62799b6aa</role>
+        <sys_class_name>sys_user_role_contains</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-02 11:10:59</sys_created_on>
+        <sys_id>f37447532f54311055a656e62799b604</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sn_ti.read.x_1088979_eclectic.action</sys_name>
+        <sys_package display_value="EclecticIQ Intelligence Center Integration for Security Operations" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="EclecticIQ Intelligence Center Integration for Security Operations">abb96d122f33211055a656e62799b6f9</sys_scope>
+        <sys_update_name>sys_user_role_contains_f37447532f54311055a656e62799b604</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-02 11:10:59</sys_updated_on>
+    </sys_user_role_contains>
+</record_update>]]></payload>
+        <payload_hash>312173846</payload_hash>
+        <record_name>sn_ti.read.x_1088979_eclectic.action</record_name>
+        <reverted_from/>
+        <source>a9d0e910938739106e69fe4b1bba1050</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-07 13:06:39</sys_created_on>
+        <sys_id>60e06150938739106e69fe4b1bba103c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18c44632d860000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-07 13:06:39</sys_updated_on>
+        <type>Contained Role</type>
+        <update_guid>20e061502687391014da98c2f6c1fc3c</update_guid>
+        <update_guid_history>20e061502687391014da98c2f6c1fc3c:312173846</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-14 07:33:21</sys_created_on>
+        <sys_db_object display_value="" name="sys_user_role_contains">sys_user_role_contains</sys_db_object>
+        <sys_id>547c3dfa63ed48b1ab14c2f6907bf1f1</sys_id>
+        <sys_metadata>f37447532f54311055a656e62799b604</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sn_ti.read.x_1088979_eclectic.action</sys_name>
+        <sys_package display_value="EclecticIQ Intelligence Center Integration for Security Operations" source="x_1088979_eclectic">abb96d122f33211055a656e62799b6f9</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="EclecticIQ Intelligence Center Integration for Security Operations">abb96d122f33211055a656e62799b6f9</sys_scope>
+        <sys_scope_delete display_value="">02e8eabc72004d848186e315fd123390</sys_scope_delete>
+        <sys_update_name>sys_user_role_contains_f37447532f54311055a656e62799b604</sys_update_name>
+        <sys_update_version display_value="sys_user_role_contains_f37447532f54311055a656e62799b604">60e06150938739106e69fe4b1bba103c</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-14 07:33:21</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -3,7 +3,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>name</element>
-            <list_id display_value="x_1088979_eclectic_eiq_source" element="NULL" name="x_1088979_eclectic_eiq_source" parent="NULL" relationship="NULL" sys_domain="global" view="e384f0717d31311076daf29f52070d7d">96b4c1db2fa0311055a656e62799b664</list_id>
+            <list_id display_value="x_1088979_eclectic_eiq_source" element="NULL" name="x_1088979_eclectic_eiq_source" parent="NULL" relationship="NULL" sys_domain="global" view="22ae8242933231106e69fe4b1bba10ab">96b4c1db2fa0311055a656e62799b664</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
@@ -40,7 +40,7 @@
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2023-08-14 12:08:26</sys_updated_on>
             <sys_user/>
-            <view display_value="Reference List" name="sys_ref_list">e384f0717d31311076daf29f52070d7d</view>
+            <view display_value="Reference List" name="sys_ref_list">22ae8242933231106e69fe4b1bba10ab</view>
             <view_name/>
         </sys_ui_list>
     </sys_ui_list>
